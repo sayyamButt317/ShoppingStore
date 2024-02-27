@@ -30,7 +30,7 @@ class ProductTile extends StatelessWidget {
               Stack(
                 children: [
                   Container(
-                    height: 180,
+                    height: 150,
                     width: double.infinity,
                     clipBehavior: Clip.antiAlias,
                     decoration: BoxDecoration(
@@ -86,7 +86,7 @@ class ProductTile extends StatelessWidget {
                   ),
                 ),
               const SizedBox(height: 8),
-              Text('\$${product.price}', style: const TextStyle(fontSize: 32, fontFamily: 'avenir')),
+              Text('Price:${product.price} \$', style: const TextStyle(fontSize: 16, fontFamily: 'lato',color: Colors.grey,fontWeight: FontWeight.w500)),
             ],
           ),
         ),

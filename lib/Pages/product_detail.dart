@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class ProductDetail extends StatefulWidget {
@@ -23,35 +25,52 @@ class _ProductDetailState extends State<ProductDetail> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(),
         body: Padding(
           padding: const EdgeInsets.all(10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Center(
-                child: Image.network(widget.productImage),
-              ),
-              Text(
-                widget.productName,
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
+              BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+                child: Container(
+                  width: double.infinity,
+                  height: MediaQuery.of(context).size.height * 0.4,
+
+                  color: Colors.grey.withOpacity(0.1),
+                  child: Center(
+                    child: Image.network(widget.productImage),
+                  ),
                 ),
               ),
-              const SizedBox(height: 10),
-              Text(
-                'Price: ${widget.productPrice} \$',
-                style: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
+              Container(
+                height: MediaQuery.of(context).size.height*0.529,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                    borderRadius:const BorderRadius.only(
+                      topLeft: Radius.circular(40),
+                      topRight: Radius.circular(40),
+                    ),
+                  border: Border.all(
+                    width: 3,
+                    color: Colors.green,
+                    style: BorderStyle.solid,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 10),
-              Text(widget.productDescription),
-            ],
-          ),
+                child: Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Text(
+                    widget.productName,
+                    style: const TextStyle(
+                      fontSize: 22,fontWeight: FontWeight.bold
+                    ),
+                  ),
+                ),
+
+              )
+
+           ],
         ),
+      ),
       ),
     );
   }

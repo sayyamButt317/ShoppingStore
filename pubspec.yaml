@@ -38,6 +38,8 @@ dependencies:
   get:
   dynamic_height_grid_view:
   http:
+  smooth_page_indicator:
+  google_fonts:
 
 dev_dependencies:
   flutter_test:
