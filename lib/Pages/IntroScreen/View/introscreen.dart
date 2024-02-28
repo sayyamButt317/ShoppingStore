@@ -5,7 +5,6 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../../Widgets/introview.dart';
 import '../Model/intromodel.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class IntroductionScreen extends StatelessWidget {
   IntroductionScreen({super.key});

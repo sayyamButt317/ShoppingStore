@@ -3,9 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:shoppingstore/Pages/SplashScreen/view/splashscreen.dart';
 
-import 'Pages/IntroScreen/View/introscreen.dart';
-import 'Pages/home.dart';
-
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
@@ -23,7 +20,6 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
-
       ),
       home: const SplashScreen(),
     );

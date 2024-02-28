@@ -1,15 +1,14 @@
 import 'dart:ui';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ProductDetail extends StatefulWidget {
   const ProductDetail({
-    Key? key,
+    super.key,
     required this.productName,
     required this.productPrice,
     required this.productImage,
     required this.productDescription,
-  }) : super(key: key);
+  });
 
   final String productName;
   final String productPrice;
@@ -29,16 +28,16 @@ class _ProductDetailState extends State<ProductDetail> {
           iconTheme: const IconThemeData(
             color: Colors.black, //change your color here
           ),
-          title: const Text("Product Detail's",style: TextStyle(fontFamily: "lato"),),
+          title: const Text(
+            "Product Detail's",
+            style: TextStyle(fontFamily: "lato"),
+          ),
           centerTitle: true,
         ),
         body: Column(
-
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
             BackdropFilter(
-
               filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
               child: Container(
                 width: double.infinity,
