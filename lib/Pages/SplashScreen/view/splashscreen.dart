@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shoppingstore/Pages/IntroScreen/View/introscreen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -66,6 +67,7 @@ class _SplashScreenState extends State<SplashScreen>
       //     MaterialPageRoute(builder: (context) => IntroductionScreen()),
       //   );
       // }
+      Get.off(()=> IntroductionScreen());
     });
   }
 
@@ -74,31 +76,32 @@ class _SplashScreenState extends State<SplashScreen>
     return Scaffold(
       body: Container(
         color: Theme.of(context).primaryColor,
+
         child: Center(
-          child: Row(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               AnimatedBuilder(
                 animation: animationController,
                 builder: (_, child) {
                   return Transform.translate(
-                    offset: Offset(-0.5 * animationController.value, 0.0),
+                    offset: Offset(0.3 * animationController.value, 0.0),
                     child: Image.asset(
                       "images/intro0.png",
                       width: 100,
-                      height: 100,
+                      height: MediaQuery.of(context).size.height*0.2,
                     ),
                   );
                 },
               ),
-              const SizedBox(width: 8), // Adjust the width as needed
+
               SlideTransition(
                 position: textAnimation,
                 child: const Text(
-                  "Go Blind",
+                  "GoBlind",
                   style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                    fontWeight: FontWeight.w600,
                     color: Colors.white,
                   ),
                 ),

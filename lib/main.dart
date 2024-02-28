@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:shoppingstore/Pages/SplashScreen/view/splashscreen.dart';
 
 import 'Pages/IntroScreen/View/introscreen.dart';
 import 'Pages/home.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
 
       ),
-      home: IntroductionScreen(),
+      home: const SplashScreen(),
     );
   }
 }

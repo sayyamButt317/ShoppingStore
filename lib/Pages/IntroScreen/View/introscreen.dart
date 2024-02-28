@@ -15,8 +15,6 @@ class IntroductionScreen extends StatelessWidget {
     IntroModel("Easy Buying", "", "images/intro1.png"),
     IntroModel("Quick Shipping", "", "images/intro2.png"),
     IntroModel("Happy Customer ", "", "images/intro3.png"),
-
-
   ]);
 
   var currentShowIndex = 0;
@@ -41,7 +39,6 @@ class IntroductionScreen extends StatelessWidget {
               IntroView(introModel: introPageList[0]),
               IntroView(introModel: introPageList[1]),
               IntroView(introModel: introPageList[2]),
-
             ],
           ),
         ),
@@ -55,7 +52,7 @@ class IntroductionScreen extends StatelessWidget {
         ),
         Padding(
           padding:
-          const EdgeInsets.only(left: 48, right: 48, bottom: 32, top: 32),
+              const EdgeInsets.only(left: 48, right: 48, bottom: 32, top: 32),
           child: Container(
             height: 48,
             decoration: BoxDecoration(
@@ -74,15 +71,12 @@ class IntroductionScreen extends StatelessWidget {
               child: InkWell(
                   onTap: () => Get.to(() => const MyHomePage()),
                   borderRadius: BorderRadius.circular(24),
-                  child: Center(
+                  child: const Center(
                       child: Text("Shop Now",
                           style: TextStyle(
-
-                                fontWeight: FontWeight.w500,
-                                fontSize: 16,
-                                color: Colors.white,
-
-
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
+                            color: Colors.white,
                           )))),
             ),
           ),

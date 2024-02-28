@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ProductDetail extends StatefulWidget {
@@ -24,10 +25,20 @@ class _ProductDetailState extends State<ProductDetail> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          iconTheme: const IconThemeData(
+            color: Colors.black, //change your color here
+          ),
+          title: const Text("Product Detail's",style: TextStyle(fontFamily: "lato"),),
+          centerTitle: true,
+        ),
         body: Column(
+
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+
             BackdropFilter(
+
               filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
               child: Container(
                 width: double.infinity,
@@ -41,9 +52,8 @@ class _ProductDetailState extends State<ProductDetail> {
             Column(
               children: [
                 Container(
-                  height: MediaQuery.of(context).size.height * 0.54,
+                  height: MediaQuery.of(context).size.height * 0.45,
                   width: double.infinity,
-
                   decoration: BoxDecoration(
                     color: Colors.white.withOpacity(0.4),
                     borderRadius: const BorderRadius.only(
@@ -80,10 +90,12 @@ class _ProductDetailState extends State<ProductDetail> {
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
-
                             ),
-
                           ],
+                        ),
+                        Divider(
+                          color: Colors.black.withOpacity(0.2),
+                          thickness: 1.0,
                         ),
                         const Text(
                           "Description",
@@ -93,9 +105,10 @@ class _ProductDetailState extends State<ProductDetail> {
                           ),
                         ),
                         Text(
-                          widget.productDescription,style:  const TextStyle(color: Colors.grey,fontSize: 10),
+                          widget.productDescription,
+                          style:
+                              const TextStyle(color: Colors.grey, fontSize: 10),
                         ),
-                        const Text("Choose Size")
                       ],
                     ),
                   ),
