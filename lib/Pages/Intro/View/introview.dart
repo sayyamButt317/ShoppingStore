@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../IntroScreen/Model/intromodel.dart';
-
+import '../../OnBoarding/Model/onboardingmodel.dart';
 
 class IntroView extends StatelessWidget {
   final IntroModel introModel;

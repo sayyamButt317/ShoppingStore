@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shoppingstore/Pages/HomeScreen/View/home.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import '../../OnBoarding/View/introview.dart';
-import '../Model/intromodel.dart';
+import '../../Intro/View/introview.dart';
+import '../Model/onboardingmodel.dart';
 import 'package:get/get.dart';
 
 class IntroductionScreen extends StatelessWidget {
   IntroductionScreen({super.key});
 
-  static PageController pageController = PageController(initialPage: 0);
+  static final PageController pageController = PageController(initialPage: 0);
   List<IntroModel> introPageList = ([
     IntroModel("Easy Buying", "", "images/intro1.png"),
     IntroModel("Quick Shipping", "", "images/intro2.png"),
@@ -65,19 +65,15 @@ class IntroductionScreen extends StatelessWidget {
                 )
               ],
             ),
-            child: Material(
-              color: Colors.transparent,
-              child: InkWell(
-                  onTap: () => Get.to(() => const MyHomePage()),
-                  borderRadius: BorderRadius.circular(24),
-                  child: const Center(
-                      child: Text("Shop Now",
-                          style: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            fontSize: 16,
-                            color: Colors.white,
-                          )))),
-            ),
+            child: FloatingActionButton(
+                onPressed: () => Get.to(() => const MyHomePage()),
+                child: const Center(
+                    child: Text("->",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 8,
+                          color: Colors.white,
+                        )))),
           ),
         ),
         SizedBox(
