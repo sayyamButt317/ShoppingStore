@@ -51,7 +51,7 @@ class _ProductDetailState extends State<ProductDetail> {
             Column(
               children: [
                 Container(
-                  height: MediaQuery.of(context).size.height * 0.45,
+                  height: MediaQuery.of(context).size.height * 0.495,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.white.withOpacity(0.4),

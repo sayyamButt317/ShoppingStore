@@ -34,7 +34,7 @@ class ProductTile extends StatelessWidget {
                     width: double.infinity,
                     clipBehavior: Clip.antiAlias,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(4),
+                      borderRadius: BorderRadius.circular(8),
                     ),
                     child: Image.network(
                       product.imageLink,
@@ -44,7 +44,7 @@ class ProductTile extends StatelessWidget {
                   Positioned(
                     right: 0,
                     child: Obx(() => CircleAvatar(
-                          backgroundColor: Colors.white,
+                          backgroundColor: Colors.transparent,
                           child: IconButton(
                             icon: product.isFavorite.value ? const Icon(Icons.favorite_rounded) : const Icon(Icons.favorite_border),
                             onPressed: () {
