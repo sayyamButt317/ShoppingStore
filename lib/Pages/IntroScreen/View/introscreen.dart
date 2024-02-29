@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shoppingstore/Pages/home.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import '../../../Widgets/introview.dart';
+import '../../OnBoarding/View/introview.dart';
 import '../Model/intromodel.dart';
 import 'package:get/get.dart';
 
