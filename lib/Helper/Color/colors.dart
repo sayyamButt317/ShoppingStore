@@ -18,6 +18,17 @@ class AppColor {
   static const Color darkColor = Color(0xFF272727);
   static const Color primaryBackgroundColor = Color(0xFFF3F5FF);
 
+  //Gradient color
+  static const LinearGradient gradient = LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [
+      Color(0xFF4b68ff),
+      Color(0xFFFFE24B),
+      Color(0xFFb0c7ff),
+    ],
+  );
+
   //Background Container Color
   static const Color lightBackgroundColor = Color(0xFFF6F6F6);
   static const Color darkBackgroundColor = Color(0xFF272727);
