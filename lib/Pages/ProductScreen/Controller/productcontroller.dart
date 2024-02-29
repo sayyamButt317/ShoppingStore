@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
 import '../Model/product.dart';
-import '../../../services/remoteservices.dart';
+import '../../../Api/remoteservices.dart';
 
 class ProductController extends GetxController {
   var productList = <Product>[].obs;

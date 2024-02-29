@@ -46,7 +46,9 @@ class ProductTile extends StatelessWidget {
                     child: Obx(() => CircleAvatar(
                           backgroundColor: Colors.transparent,
                           child: IconButton(
-                            icon: product.isFavorite.value ? const Icon(Icons.favorite_rounded) : const Icon(Icons.favorite_border),
+                            icon: product.isFavorite.value
+                                ? const Icon(Icons.favorite_rounded)
+                                : const Icon(Icons.favorite_border),
                             onPressed: () {
                               product.isFavorite.toggle();
                             },
@@ -59,7 +61,8 @@ class ProductTile extends StatelessWidget {
               Text(
                 product.name,
                 maxLines: 2,
-                style: const TextStyle(fontFamily: 'avenir', fontWeight: FontWeight.w800),
+                style: const TextStyle(
+                    fontFamily: 'avenir', fontWeight: FontWeight.w800),
                 overflow: TextOverflow.ellipsis,
               ),
               const SizedBox(height: 8),
@@ -69,7 +72,8 @@ class ProductTile extends StatelessWidget {
                     color: Colors.green,
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -86,7 +90,12 @@ class ProductTile extends StatelessWidget {
                   ),
                 ),
               const SizedBox(height: 8),
-              Text('Price:${product.price} \$', style: const TextStyle(fontSize: 16, fontFamily: 'lato',color: Colors.grey,fontWeight: FontWeight.w500)),
+              Text('Price:${product.price} \$',
+                  style: const TextStyle(
+                      fontSize: 16,
+                      fontFamily: 'lato',
+                      color: Colors.grey,
+                      fontWeight: FontWeight.w500)),
             ],
           ),
         ),
