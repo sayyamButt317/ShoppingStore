@@ -10,6 +10,6 @@ class ImageLink {
 
 //OnBoarding Images
   static const String onBoarding1 = "images/OnBoarding/intro1.png";
-  static const String onBoarding2 = "images/OnBoarding/intro2.png";
+  static const String onBoarding2 = "images/OnBoarding/intro2.gif";
   static const String onBoarding3 = "images/OnBoarding/intro3.png";
 }
