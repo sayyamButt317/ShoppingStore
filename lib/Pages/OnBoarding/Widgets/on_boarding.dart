@@ -13,6 +13,7 @@ class OnBoarding extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Padding(
       padding: const EdgeInsets.all(Size.defaultSpacing),
       child: Column(
