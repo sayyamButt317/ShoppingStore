@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:shoppingstore/Pages/SplashScreen/view/splashscreen.dart';
+import 'package:shoppingstore/Pages/OnBoarding/View/onboardingscreen.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      home: const OnBoardingScreen(),
     );
   }
 }

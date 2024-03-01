@@ -1,4 +1,4 @@
-class SocialIcon {
+class ImageLink {
   //Social Icon
   static const String google = "images/icons/google.png";
   static const String facebook = "images/icons/facebook.png";
@@ -7,4 +7,9 @@ class SocialIcon {
   //App Logo
   static const String darkmodelogo = "images/logo.png";
   static const String lightmodelogo = "images/logo.png";
+
+//OnBoarding Images
+  static const String onBoarding1 = "images/OnBoarding/intro1.png";
+  static const String onBoarding2 = "images/OnBoarding/intro2.png";
+  static const String onBoarding3 = "images/OnBoarding/intro3.png";
 }

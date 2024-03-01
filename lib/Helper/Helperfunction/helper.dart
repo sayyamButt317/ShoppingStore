@@ -66,6 +66,10 @@ class HelperFunction {
     return Theme.of(Get.context!).brightness == Brightness.dark;
   }
 
+  static boolisLightmode() {
+    return Theme.of(Get.context!).brightness == Brightness.light;
+  }
+
   static Size screensize() {
     return MediaQuery.of(Get.context!).size;
   }
