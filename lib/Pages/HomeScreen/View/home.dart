@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 
 import '../../ProductScreen/Controller/productcontroller.dart';
 import '../../ProductScreen/Model/product.dart';
-import '../../../Widgets/producttile.dart';
+import '../../../Utils/producttile.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});

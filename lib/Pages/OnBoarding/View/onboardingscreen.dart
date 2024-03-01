@@ -12,26 +12,29 @@ import '../Widgets/on_boarding.dart';
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
 
-  final controller = Get.put(OnBoardingController());
+
   @override
   Widget build(BuildContext context) {
-    HelperFunction.boolisDarkmode();
+    final controller = Get.put(OnBoardingController());
+    HelperFunction.boolisDarkmode(context);
     return Scaffold(
         body: Stack(
       children: [
         PageView(
+          controller:controller.pageController,
+          onPageChanged: controller.updatePageIndicator,
           children: const [
             OnBoarding(
                 image: ImageLink.onBoarding1,
-                title: StaticText.onBoardingSubTitle1,
+                title: StaticText.onBoardingTitle1,
                 subtitle: StaticText.onBoardingSubTitle1),
             OnBoarding(
-                image: ImageLink.onBoarding2,
-                title: StaticText.onBoardingSubTitle2,
+                image: ImageLink.onBoarding3,
+                title: StaticText.onBoardingTitle2,
                 subtitle: StaticText.onBoardingSubTitle2),
             OnBoarding(
-                image: ImageLink.onBoarding3,
-                title: StaticText.onBoardingSubTitle3,
+                image: ImageLink.onBoarding2,
+                title: StaticText.onBoardingTitle3,
                 subtitle: StaticText.onBoardingSubTitle3),
           ],
         ),

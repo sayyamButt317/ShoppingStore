@@ -1,4 +1,4 @@
-import 'dart:js';
+
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -64,15 +64,15 @@ class HelperFunction {
     }
   }
 
-  static boolisDarkmode() {
+  static boolisDarkmode(BuildContext context) {
     return Theme.of(Get.context!).brightness == Brightness.dark;
   }
 
-  static boolisLightmode() {
+  static boolisLightmode(BuildContext context) {
     return Theme.of(Get.context!).brightness == Brightness.light;
   }
 
-  static Size screensize() {
+  static Size screensize(BuildContext context) {
     return MediaQuery.of(Get.context!).size;
   }
 

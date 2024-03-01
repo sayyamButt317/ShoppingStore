@@ -4,18 +4,21 @@ import '../../../Helper/Color/colors.dart';
 import '../../../Helper/Sizes/Size.dart';
 import '../../../Helper/Devicesize/deviceutils.dart';
 import '../../../Helper/Helperfunction/helper.dart';
+import '../Controller/onboardingController.dart';
 
 class DotNavigation extends StatelessWidget {
   const DotNavigation({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final dark = HelperFunction.boolisDarkmode();
+    final controller = OnBoardingController.instance;
+    final dark = HelperFunction.boolisDarkmode(context);
     return Positioned(
       bottom: DeviceUtils.getNavigationBarHeight() + 25,
       left: Size.defaultSpacing,
       child: SmoothPageIndicator(
-          controller: PageController(),
+          controller:controller.pageController,
+          onDotClicked: controller.dotNavigationClick,
           count: 3,
           effect: ExpandingDotsEffect(
               activeDotColor: dark ? AppColor.lightGrey : AppColor.darkerGrey,

@@ -31,8 +31,9 @@ class OnBoarding extends StatelessWidget {
           const SizedBox(height: Size.spacebtwItems),
           Text(
             subtitle,
-            style: Theme.of(context).textTheme.headlineMedium,
+            style: const TextStyle(fontSize: Size.fontSizeSm),
             textAlign: TextAlign.center,
+
           )
         ],
       ),
