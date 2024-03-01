@@ -5,8 +5,8 @@ import '../../../Helper/Sizes/Size.dart';
 import '../../../Helper/Devicesize/deviceutils.dart';
 import '../../../Helper/Helperfunction/helper.dart';
 
-class Pageindicator extends StatelessWidget {
-  const Pageindicator({super.key});
+class DotNavigation extends StatelessWidget {
+  const DotNavigation({super.key});
 
   @override
   Widget build(BuildContext context) {

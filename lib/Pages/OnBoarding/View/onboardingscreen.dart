@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:shoppingstore/Helper/Helperfunction/helper.dart';
 import 'package:shoppingstore/Helper/ImagesLink/imagestring.dart';
 import 'package:shoppingstore/Helper/Text/statictext.dart';
+import 'package:shoppingstore/Pages/OnBoarding/Controller/onboardingController.dart';
+import 'package:shoppingstore/Pages/OnBoarding/Widgets/arrow.dart';
 import 'package:shoppingstore/Pages/OnBoarding/Widgets/dotnavigation.dart';
 import 'package:shoppingstore/Pages/OnBoarding/Widgets/skip.dart';
 import '../Widgets/on_boarding.dart';
@@ -9,6 +12,7 @@ import '../Widgets/on_boarding.dart';
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
 
+  final controller = Get.put(OnBoardingController());
   @override
   Widget build(BuildContext context) {
     HelperFunction.boolisDarkmode();
@@ -32,7 +36,8 @@ class OnBoardingScreen extends StatelessWidget {
           ],
         ),
         const Skipbtn(),
-        const Pageindicator()
+        const DotNavigation(),
+        const Arrowbtn(),
       ],
     ));
   }
