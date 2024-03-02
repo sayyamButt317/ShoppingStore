@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shoppingstore/Helper/Helperfunction/helper.dart';
+import 'package:shoppingstore/Pages/HomeScreen/View/homescreen.dart';
 
 import '../Helper/Color/colors.dart';
 
@@ -12,7 +13,7 @@ class BottomNavigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(NavigationController());
-    final darkmode =HelperFunction.boolisDarkmode(context);
+    final darkMode =HelperFunction.boolisDarkmode(context);
     return Scaffold(
       bottomNavigationBar: Obx(
         ()=> NavigationBar(
@@ -20,8 +21,8 @@ class BottomNavigation extends StatelessWidget {
           elevation: 0,
           selectedIndex:  controller.selectedIndex.value,
           onDestinationSelected: (index) => controller.selectedIndex.value=index,
-          backgroundColor:darkmode? AppColor.black :AppColor.white ,
-          indicatorColor: darkmode ? AppColor.white.withOpacity(0.1):Colors.black.withOpacity(0.1),
+          backgroundColor:darkMode? AppColor.black :AppColor.white ,
+          indicatorColor: darkMode ? AppColor.white.withOpacity(0.1):Colors.black.withOpacity(0.1),
           destinations: const [
             NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
             NavigationDestination(icon: Icon(Iconsax.shop), label: 'Store'),
@@ -29,7 +30,9 @@ class BottomNavigation extends StatelessWidget {
             NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
           ],
         ),
+
       ),
+      body: Obx(() => controller.screens[controller.selectedIndex.value]),
 
     );
   }
@@ -38,5 +41,5 @@ class BottomNavigation extends StatelessWidget {
 class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
 
-  final screens =[Container(color: Colors.green,)];
+  final screens =[const HomeScreen(),Container(color: Colors.black,),Container(color:Colors.red),Container(color: Colors.grey,)];
 }

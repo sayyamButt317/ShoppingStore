@@ -1,16 +1,42 @@
 import 'package:flutter/cupertino.dart';
-import '../../../Utils/curvededge.dart';
 
-class CurvedEdgeWidget extends StatelessWidget {
-  const CurvedEdgeWidget({super.key,this.child,});
+import '../../../../Helper/Color/colors.dart';
+import '../Container/circularcontainer.dart';
+import 'curvededge.dart';
 
-  final Widget? child;
+class curvedEdgeWidget extends StatelessWidget {
+  const curvedEdgeWidget({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     return ClipPath(
       clipper: CurvedEdges(),
-      child: child,
+      child: Container(
+        color: AppColor.primaryColor,
+        padding: const EdgeInsets.all(0),
+        child: SizedBox(
+          height: 400,
+          child: Stack(
+            children: [
+              Positioned(
+                  top: -150,
+                  right: -250,
+                  child: CircularContainer(
+                    backgroundColor: AppColor.textWhite.withOpacity(0.1),
+                  )),
+              Positioned(
+                  top: 100,
+                  right: -300,
+                  child: CircularContainer(
+                    backgroundColor: AppColor.textWhite.withOpacity(0.1),
+                  )),
+
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

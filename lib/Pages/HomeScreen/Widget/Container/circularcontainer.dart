@@ -1,16 +1,16 @@
 import 'package:flutter/cupertino.dart';
 
-import '../Helper/Color/colors.dart';
+import '../../../../Helper/Color/colors.dart';
 
 class CircularContainer extends StatelessWidget {
   const CircularContainer(
       {super.key,
       this.height = 400,
       this.width = 400,
-      this.radius = 0,
+      this.radius = 400,
       this.child,
       this.padding = 0,
-      this.backgroundColor});
+      this.backgroundColor = AppColor.white});
 
   final double? height;
   final double? width;
@@ -20,15 +20,16 @@ class CircularContainer extends StatelessWidget {
   final Color? backgroundColor;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 400,
-      height: 400,
+    return  Container(
+      width: width,
+      height: height,
       padding: const EdgeInsets.all(0),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(400),
-        color: AppColor.textWhite.withOpacity(0.1),
+        borderRadius: BorderRadius.circular(radius!),
+        color: backgroundColor,
       ),
       child: child,
+
     );
   }
 }
