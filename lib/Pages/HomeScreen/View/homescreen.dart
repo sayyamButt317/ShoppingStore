@@ -13,24 +13,33 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
         body: Column(
       children: [
-        Container(
-          color: AppColor.primaryColor,
-          padding: const EdgeInsets.all(0),
-          child: Stack(
-            children: [
-              Positioned(
-                  top: -150,
-                  bottom: -250,
-                  child: CircularContainer(
-                    backgroundcolor: AppColor.extWhite.withOpacity(0.1),
-                  )),
-              Positioned(
-                  top: -150,
-                  bottom: -250,
-                  child: CircularContainer(
-                    backgroundcolor: AppColor.extWhite.withOpacity(0.1),
-                  )),
-            ],
+        ClipPath(
+          clipper: ,
+          child: Container(
+            color: AppColor.primaryColor,
+            padding: const EdgeInsets.all(0),
+            child: SizedBox(
+              height: 400,
+              child: Stack(
+                children: [
+                  Positioned(
+                      top: -150,
+                      right: -250,
+                      child: CircularContainer(
+                        backgroundcolor: AppColor.extWhite.withOpacity(0.1),
+                      )),
+                  Positioned(
+                      top: 100,
+                      bottom: -300,
+                      child: CircularContainer(
+                        backgroundcolor: AppColor.extWhite.withOpacity(0.1),
+                      )),
+                  Column(
+                    children:[]
+                  ),
+                ],
+              ),
+            ),
           ),
         )
       ],
