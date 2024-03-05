@@ -1,0 +1,4 @@
+class AppCheckBocTheme{
+
+  AppCheckBocTheme._();
+}

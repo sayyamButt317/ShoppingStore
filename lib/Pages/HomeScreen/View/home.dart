@@ -22,72 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xfFE9EBEA),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(children: [
-          Padding(
-            padding: const EdgeInsets.only(
-              top: 60.0,
-              left: 8.0,
-              right: .0,
-            ),
-            child: Row(children: [
-              SizedBox(
-                height: 50,
-                width: MediaQuery.of(context).size.width * 0.8,
-                child: TextField(
-                  onChanged: (value) => searchmatch(value),
-                  decoration: InputDecoration(
-                    prefixIcon: const Icon(Icons.search, size: 40),
-                    hintText: 'Search..',
-                    hintStyle: const TextStyle(
-                      color: Colors.grey,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(width: 10),
-              const Badge(
-                label: Text("1"),
-                child: Image(
-                  height: 30,
-                  width: 30,
-                  image: AssetImage("icons/shopping-bag.png"),
-                ),
-              ),
-            ]),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          const SizedBox(height: 5),
-          const Padding(
-            padding: EdgeInsets.only(left: 10.0, right: 10.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("Best Sale Product",
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                    )),
-                Text(
-                  'See more',
-                  style: TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0xff2A9770)),
-                )
-              ],
-            ),
-          ),
-          Expanded(
+      body: Expanded(
             child: FutureBuilder(
               future: ProductController().fetchProducts(),
               builder: (context, snapshot) {
@@ -113,8 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
           )
-        ]),
-      ),
+
     );
   }
 }

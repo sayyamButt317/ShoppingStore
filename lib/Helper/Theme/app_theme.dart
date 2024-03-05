@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:shoppingstore/Helper/Theme/texttheme.dart';
+import 'package:shoppingstore/Helper/Theme/text_theme.dart';
 
 class AppTheme{
   AppTheme._();

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-class CurvedEdges extends CustomClipper<Path> {
+class CustomCurvedEdges extends CustomClipper<Path> {
   @override
 Path getClip(Size size){
   var path =Path();

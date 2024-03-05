@@ -16,7 +16,7 @@ class BottomNavigation extends StatelessWidget {
     final darkMode =HelperFunction.boolisDarkmode(context);
     return Scaffold(
       bottomNavigationBar: Obx(
-        ()=> NavigationBar(
+            ()=> NavigationBar(
           height: 80,
           elevation: 0,
           selectedIndex:  controller.selectedIndex.value,
