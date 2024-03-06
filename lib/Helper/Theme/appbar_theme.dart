@@ -12,8 +12,8 @@ class AppbarTheme {
       scrolledUnderElevation: 0,
       backgroundColor: Colors.transparent,
       surfaceTintColor: Colors.transparent,
-      iconTheme: IconThemeData(color: AppColor.black, size: Size.iconMd),
-      actionsIconTheme: IconThemeData(color: AppColor.black, size: Size.iconMd),
+      iconTheme: IconThemeData(color: AppColor.black, size: AppSize.iconMd),
+      actionsIconTheme: IconThemeData(color: AppColor.black, size: AppSize.iconMd),
       titleTextStyle: TextStyle(
           fontSize: 18.0, fontWeight: FontWeight.w600, color: AppColor.black));
 
@@ -23,8 +23,8 @@ class AppbarTheme {
       scrolledUnderElevation: 0,
       backgroundColor: Colors.transparent,
       surfaceTintColor: Colors.transparent,
-      iconTheme: IconThemeData(color: AppColor.black, size: Size.iconMd),
-      actionsIconTheme: IconThemeData(color: AppColor.black, size: Size.iconMd),
+      iconTheme: IconThemeData(color: AppColor.black, size: AppSize.iconMd),
+      actionsIconTheme: IconThemeData(color: AppColor.black, size: AppSize.iconMd),
       titleTextStyle: TextStyle(
           fontSize: 18.0, fontWeight: FontWeight.w600, color: AppColor.white));
 }

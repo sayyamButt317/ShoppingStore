@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shoppingstore/Helper/Color/colors.dart';
 
-class AppButtonTheme{
-  AppButtonTheme._();
+class AppElevatedButtonTheme{
+  AppElevatedButtonTheme._();
 
   static final lightElevatedButtonTheme = ElevatedButtonThemeData(
     style:ElevatedButton.styleFrom(

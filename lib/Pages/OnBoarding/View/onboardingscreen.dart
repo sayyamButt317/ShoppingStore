@@ -26,16 +26,16 @@ class OnBoardingScreen extends StatelessWidget {
           children: const [
             OnBoarding(
                 image: ImageLink.onBoarding1,
-                title: StaticText.onBoardingTitle1,
-                subtitle: StaticText.onBoardingSubTitle1),
+                title: AppStaticText.onBoardingTitle1,
+                subtitle: AppStaticText.onBoardingSubTitle1),
             OnBoarding(
                 image: ImageLink.onBoarding3,
-                title: StaticText.onBoardingTitle2,
-                subtitle: StaticText.onBoardingSubTitle2),
+                title: AppStaticText.onBoardingTitle2,
+                subtitle: AppStaticText.onBoardingSubTitle2),
             OnBoarding(
                 image: ImageLink.onBoarding2,
-                title: StaticText.onBoardingTitle3,
-                subtitle: StaticText.onBoardingSubTitle3),
+                title: AppStaticText.onBoardingTitle3,
+                subtitle: AppStaticText.onBoardingSubTitle3),
           ],
         ),
         const Skipbtn(),

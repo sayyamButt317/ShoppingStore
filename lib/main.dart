@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:shoppingstore/Pages/OnBoarding/View/onboardingscreen.dart';
 
+import 'Helper/Theme/app_theme.dart';
 import 'Helper/Theme/appbar_theme.dart';
 
 void main() {
@@ -19,8 +20,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
-      theme: AppBarTheme.lightAppbarTheme(),
-      darkTheme: AppbarTheme.darkAppbarTheme,
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
       home: const OnBoardingScreen(),
     );
   }

@@ -1,29 +1,46 @@
 
 import 'package:flutter/material.dart';
+import 'package:shoppingstore/Helper/Theme/bottomsheet_theme.dart';
+import 'package:shoppingstore/Helper/Theme/checkox_theme.dart';
+import 'package:shoppingstore/Helper/Theme/outlinebutton_theme.dart';
 import 'package:shoppingstore/Helper/Theme/text_theme.dart';
+import 'package:shoppingstore/Helper/Theme/textform_theme.dart';
+
+import 'chip_theme.dart';
+import 'elevatedbutton_theme.dart';
 
 class AppTheme{
   AppTheme._();
 
-  static ThemeData lighttheme =ThemeData(
+  static ThemeData lightTheme =ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
     brightness: Brightness.light,
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.white,
     textTheme: AppTextTheme.lightTextTheme,
-    elevatedButtonTheme: ElevatedButtonTheme.lightElevatedButtonTheme,
+    chipTheme: AppChipTheme.lightChipTheme ,
+    elevatedButtonTheme: AppElevatedButtonTheme.lightElevatedButtonTheme,
+    checkboxTheme: AppCheckBoxTheme.lightCheckBoxTheme,
+    bottomSheetTheme: AppBottomSheetTheme.lightBottomSheetTheme,
+    outlinedButtonTheme: AppOutlineButton.lightOutlineButtonTheme,
+    inputDecorationTheme: AppTextFeildTheme.lightInputDecorationTheme,
+
   );
 
   static ThemeData darkTheme = ThemeData(
-    useMaterial3:true,
+    useMaterial3: true,
     fontFamily: 'Poppins',
     brightness: Brightness.dark,
-primaryColor: Colors.blue,
-    scaffoldBackgroundColor: Colors.black,
-    textTheme: AppTextTheme.lightTextTheme,
-    elevatedButtonTheme: ElevatedButtonTheme.darkElevatedButtonTheme,
-
+    primaryColor: Colors.blue,
+    scaffoldBackgroundColor: Colors.white,
+    textTheme: AppTextTheme.darkTextTheme,
+    chipTheme: AppChipTheme.darkChipTheme ,
+    elevatedButtonTheme: AppElevatedButtonTheme.darkElevatedButtonTheme,
+    checkboxTheme: AppCheckBoxTheme.darkCheckBoxTheme,
+    bottomSheetTheme: AppBottomSheetTheme.darkBottomSheetTheme,
+    outlinedButtonTheme: AppOutlineButton.darkOutlineButtonTheme,
+    inputDecorationTheme: AppTextFeildTheme.darkInputDecorationTheme,
 
   );
 }

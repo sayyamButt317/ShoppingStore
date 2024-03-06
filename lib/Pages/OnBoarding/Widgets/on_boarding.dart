@@ -15,7 +15,7 @@ class OnBoarding extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Padding(
-      padding: const EdgeInsets.all(Size.defaultSpacing),
+      padding: const EdgeInsets.all(AppSize.defaultSpacing),
       child: Column(
         children: [
           Image(
@@ -28,10 +28,10 @@ class OnBoarding extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineMedium,
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height: Size.spacebtwItems),
+          const SizedBox(height: AppSize.spacebtwItems),
           Text(
             subtitle,
-            style: const TextStyle(fontSize: Size.fontSizeSm),
+            style: const TextStyle(fontSize: AppSize.fontSizeSm),
             textAlign: TextAlign.center,
 
           )

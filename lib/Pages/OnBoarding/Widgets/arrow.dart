@@ -13,8 +13,8 @@ class Arrowbtn extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = HelperFunction.boolisDarkmode(context);
     return Positioned(
-      right: Size.defaultSpacing,
-      bottom: DeviceUtils.getNavigationBarHeight(),
+      right: AppSize.defaultSpacing,
+      bottom: AppDeviceUtils.getNavigationBarHeight(),
       child: ElevatedButton(
         onPressed: () =>OnBoardingController.instance.nextPage(),
         style: ElevatedButton.styleFrom(

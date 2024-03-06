@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shoppingstore/Pages/ProductScreen/Views/product_detail.dart';
 
-import '../Pages/ProductScreen/Model/product.dart';
+import '../../Pages/ProductScreen/Model/product.dart';
+
+
 
 class ProductTile extends StatelessWidget {
   final Product product;

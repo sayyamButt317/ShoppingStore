@@ -14,8 +14,8 @@ class DotNavigation extends StatelessWidget {
     final controller = OnBoardingController.instance;
     final dark = HelperFunction.boolisDarkmode(context);
     return Positioned(
-      bottom: DeviceUtils.getNavigationBarHeight() + 25,
-      left: Size.defaultSpacing,
+      bottom: AppDeviceUtils.getNavigationBarHeight() + 25,
+      left: AppSize.defaultSpacing,
       child: SmoothPageIndicator(
           controller:controller.pageController,
           onDotClicked: controller.dotNavigationClick,

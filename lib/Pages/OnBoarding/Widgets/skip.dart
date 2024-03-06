@@ -9,8 +9,8 @@ class Skipbtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-        top: DeviceUtils.appBarHeight(),
-        right: Size.defaultSpacing,
+        top: AppDeviceUtils.appBarHeight(),
+        right: AppSize.defaultSpacing,
         child: TextButton(onPressed: ()=>OnBoardingController.instance.skipPage(), child: const Text("Skip")));
   }
 }
