@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:shoppingstore/Helper/Color/colors.dart';
 
 class AppElevatedButtonTheme{
   AppElevatedButtonTheme._();

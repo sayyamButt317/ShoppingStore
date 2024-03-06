@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 
-import '../../../../Helper/Color/colors.dart';
-import '../Container/circularcontainer.dart';
 import 'curvededge.dart';
 
 class CurvedEdgeWidget extends StatelessWidget {
