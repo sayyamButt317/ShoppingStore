@@ -14,6 +14,8 @@ class HomeAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomAppBar(
+      backgroundColor: Colors.transparent, // Make app bar transparent
+      // elevation: 0,
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -28,14 +30,15 @@ class HomeAppBar extends StatelessWidget {
             AppStaticText.homeAppbarSubTitle,
             style: Theme.of(context)
                 .textTheme
-                .labelMedium!
+                .labelLarge!
                 .apply(color: AppColor.white),
-          )
+          ),
         ],
       ),
       actions: [
         CartCounterIcon(
-          onPressed: (){}, iconColor: Colors.white,
+          onPressed: () {},
+          iconColor: Colors.white,
         )
       ],
     );

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -6,7 +5,9 @@ import '../../../../Helper/Color/colors.dart';
 
 class CartCounterIcon extends StatelessWidget {
   const CartCounterIcon({
-    super.key,  required this.onPressed, required this.iconColor,
+    super.key,
+    required this.onPressed,
+    required this.iconColor,
   });
 
   final VoidCallback onPressed;
@@ -17,8 +18,7 @@ class CartCounterIcon extends StatelessWidget {
       children: [
         IconButton(
             onPressed: () {},
-            icon: const Icon(Iconsax.shopping_bag,
-                color: AppColor.white)),
+            icon: const Icon(Iconsax.shopping_bag, color: AppColor.white)),
         Positioned(
             right: 0,
             child: Container(
@@ -34,9 +34,7 @@ class CartCounterIcon extends StatelessWidget {
                   style: Theme.of(context)
                       .textTheme
                       .labelLarge!
-                      .apply(
-                      color: AppColor.white,
-                      fontSizeFactor: 0.8),
+                      .apply(color: AppColor.white, fontSizeFactor: 0.8),
                 ),
               ),
             ))

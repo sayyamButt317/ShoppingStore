@@ -20,7 +20,7 @@ class CircularContainer extends StatelessWidget {
   final Color? backgroundColor;
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return Container(
       width: width,
       height: height,
       padding: const EdgeInsets.all(0),
@@ -29,7 +29,6 @@ class CircularContainer extends StatelessWidget {
         color: backgroundColor,
       ),
       child: child,
-
     );
   }
 }

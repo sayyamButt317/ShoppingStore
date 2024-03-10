@@ -11,7 +11,7 @@ class Arrowbtn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = HelperFunction.boolisDarkmode(context);
+    final dark = HelperFunction.boolIsDarkMode(context);
     return Positioned(
       right: AppSize.defaultSpacing,
       bottom: AppDeviceUtils.getNavigationBarHeight(),

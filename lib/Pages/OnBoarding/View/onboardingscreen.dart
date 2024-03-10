@@ -16,7 +16,7 @@ class OnBoardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(OnBoardingController());
-    HelperFunction.boolisDarkmode(context);
+    HelperFunction.boolIsDarkMode(context);
     return Scaffold(
         body: Stack(
       children: [

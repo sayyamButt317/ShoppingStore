@@ -12,7 +12,7 @@ class DotNavigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = OnBoardingController.instance;
-    final dark = HelperFunction.boolisDarkmode(context);
+    final dark = HelperFunction.boolIsDarkMode(context);
     return Positioned(
       bottom: AppDeviceUtils.getNavigationBarHeight() + 25,
       left: AppSize.defaultSpacing,

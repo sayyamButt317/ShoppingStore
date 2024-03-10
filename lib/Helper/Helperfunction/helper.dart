@@ -36,12 +36,12 @@ class HelperFunction {
     return null;
   }
 
-  static void showsnackbar(String message) {
+  static void showSnackBar(String message) {
     ScaffoldMessenger.of(Get.context!)
         .showSnackBar(SnackBar(content: Text(message)));
   }
 
-  static void showdialog(BuildContext context, String message) {
+  static void showDialog(BuildContext context, String message) {
     Get.dialog(AlertDialog(
       title: Text(message),
       content: Text(message),
@@ -52,7 +52,7 @@ class HelperFunction {
     ));
   }
 
-  static void navigatetoscreen(BuildContext context, screen) {
+  static void navigateToScreen(BuildContext context, screen) {
     Navigator.push(context, MaterialPageRoute(builder: (_) => screen));
   }
 
@@ -64,23 +64,23 @@ class HelperFunction {
     }
   }
 
-  static boolisDarkmode(BuildContext context) {
+  static boolIsDarkMode(BuildContext context) {
     return Theme.of(Get.context!).brightness == Brightness.dark;
   }
 
-  static boolisLightmode(BuildContext context) {
+  static boolIsLightMode(BuildContext context) {
     return Theme.of(Get.context!).brightness == Brightness.light;
   }
 
-  static Size screensize(BuildContext context) {
+  static Size screenSize(BuildContext context) {
     return MediaQuery.of(Get.context!).size;
   }
 
-  static double screenwidth() {
+  static double screenWidth() {
     return MediaQuery.of(Get.context!).size.width;
   }
 
-  static double screenheight() {
+  static double screenHeight() {
     return MediaQuery.of(Get.context!).size.height;
   }
 
