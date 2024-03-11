@@ -62,11 +62,11 @@ class HomeScreen extends StatelessWidget {
                                       color: AppColor.white,
                                       borderRadius: BorderRadius.circular(100),
                                     ),
-                                    child: Center(
+                                    child: const Center(
                                       child: Image(
                                         image: AssetImage("assetName"),
                                         fit: BoxFit.cover,
-                                        color: AppColor.black,
+                                        color: AppColor.darkColor,
                                       ),
                                     ),
                                   )
