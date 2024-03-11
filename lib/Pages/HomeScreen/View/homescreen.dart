@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:shoppingstore/Helper/Color/colors.dart';
 import 'package:shoppingstore/Helper/Sizes/Size.dart';
 import 'package:shoppingstore/Pages/HomeScreen/Widget/Searchbar/searchbar_container.dart';
+import '../../../Helper/ImagesLink/imagestring.dart';
 import '../../../Widgets/section_heading.dart';
 import '../Widget/Appbar/home_appBar.dart';
+import '../Widget/Category/home_category.dart';
 import '../Widget/curved edge/CurvedEdgeWidget.dart';
+import '../Widget/verticalimage_text/verticalimage_text.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -40,40 +44,13 @@ class HomeScreen extends StatelessWidget {
                             SectionHeading(
                               title: 'Popular Categories',
                               showActionButton: false,
+                              textColor: Colors.white,
                             )
                           ],
                         ),
                       ),
                       const SizedBox(height: AppSize.spacebtwSections),
-                      SizedBox(
-                        height: 80,
-                        child: ListView.builder(
-                            shrinkWrap: true,
-                            itemCount: 6,
-                            scrollDirection: Axis.horizontal,
-                            itemBuilder: (_, index) {
-                              return Column(
-                                children: [
-                                  Container(
-                                    width: 56,
-                                    height: 56,
-                                    padding: const EdgeInsets.all(AppSize.sm),
-                                    decoration: BoxDecoration(
-                                      color: AppColor.white,
-                                      borderRadius: BorderRadius.circular(100),
-                                    ),
-                                    child: const Center(
-                                      child: Image(
-                                        image: AssetImage("assetName"),
-                                        fit: BoxFit.cover,
-                                        color: AppColor.darkColor,
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              );
-                            }),
-                      )
+                      const HomeCategories()
                     ],
                   ),
                 ),

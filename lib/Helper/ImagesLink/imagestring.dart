@@ -18,4 +18,17 @@ class ImageLink {
   static const String productIllustration =
       "Assets/images/animations/sammy-line-workout.gif";
   static const String productSaleIllustration = "";
+
+  //Icon
+  static const String sportIcon ="Assets/icons/categories/icons8-bowling-64.png";
+  static const String clothIcon = "Assets/icons/categories/icons8-tailors-dummy-64.png";
+  static const String shoeIcon ="Assets/icons/categories/icons8-shoes-64.png";
+  static const String cosmeticIcon ="Assets/icons/categories/icons8-cosmetics-64.png";
+  static const String animalIcon = "Assets/icons/categories/icons8-dog-heart-64.png";
+  static const String toyIcon ="Assets/icons/categories/icons8-wooden-toy-car-50.png";
+  static const String furnitureIcon = "Assets/icons/categories/icons8-dining-chair-64.png";
+  static const String jewelleryIcon = "Assets/icons/categories/icons8-sparkling-diamond-64.png";
+  static const String electronicsIcons = "Assets/icons/categories/icons8-smartphone-64.png";
+
+
 }

@@ -78,9 +78,17 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - Assets/OnBoarding/intro1.png
-    - Assets/OnBoarding/intro2.png
-    - Assets/OnBoarding/intro3.gif
+    - Assets/OnBoarding/
+    - Assets/images/animations/
+    - Assets/images/banners/
+    - Assets/images/content/
+    - Assets/images/products/
+    - Assets/images/reviews/
+    - Assets/logo/
+    - Assets/icons/brands/
+    - Assets/icons/categories/
+    - Assets/icons/payment_methods/
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
