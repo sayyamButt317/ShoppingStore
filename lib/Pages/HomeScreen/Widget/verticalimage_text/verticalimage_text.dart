@@ -1,9 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shoppingstore/Helper/Helperfunction/helper.dart';
 
 import '../../../../Helper/Color/colors.dart';
-import '../../../../Helper/ImagesLink/imagestring.dart';
 import '../../../../Helper/Sizes/Size.dart';
 
 class VerticalImageText extends StatelessWidget {

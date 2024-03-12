@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:shoppingstore/Helper/Color/colors.dart';
 import 'package:shoppingstore/Helper/Sizes/Size.dart';
 import 'package:shoppingstore/Pages/HomeScreen/Widget/Searchbar/searchbar_container.dart';
-import '../../../Helper/ImagesLink/imagestring.dart';
 import '../../../Widgets/section_heading.dart';
 import '../Widget/Appbar/home_appBar.dart';
 import '../Widget/Category/home_category.dart';
 import '../Widget/curved edge/CurvedEdgeWidget.dart';
-import '../Widget/verticalimage_text/verticalimage_text.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -28,16 +25,16 @@ class HomeScreen extends StatelessWidget {
               child: Container(
                 color: AppColor.primaryColor,
                 padding: const EdgeInsets.all(0),
-                child: SizedBox(
+                child: const SizedBox(
                   height: 300,
                   child: Column(
                     children: [
-                      const SizedBox(height: AppSize.spacebtwSections),
-                      const SearchBarContainer(
+                      SizedBox(height: AppSize.spacebtwSections),
+                      SearchBarContainer(
                         text: 'Search in Store',
                       ),
-                      const SizedBox(height: AppSize.spacebtwSections),
-                      const Padding(
+                      SizedBox(height: AppSize.spacebtwSections),
+                      Padding(
                         padding: EdgeInsets.only(left: AppSize.defaultSpacing),
                         child: Column(
                           children: [
@@ -49,8 +46,8 @@ class HomeScreen extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const SizedBox(height: AppSize.spacebtwSections),
-                      const HomeCategories()
+                      SizedBox(height: AppSize.spacebtwSections),
+                      HomeCategories()
                     ],
                   ),
                 ),
