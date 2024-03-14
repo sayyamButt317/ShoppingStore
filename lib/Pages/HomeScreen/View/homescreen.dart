@@ -1,10 +1,15 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:shoppingstore/Helper/Color/colors.dart';
 import 'package:shoppingstore/Helper/Sizes/Size.dart';
 import 'package:shoppingstore/Pages/HomeScreen/Widget/Searchbar/searchbar_container.dart';
+import '../../../Helper/ImagesLink/imagestring.dart';
 import '../../../Widgets/section_heading.dart';
 import '../Widget/Appbar/home_appBar.dart';
+import '../Widget/Banner/banner_image.dart';
 import '../Widget/Category/home_category.dart';
+import '../Widget/Container/circularcontainer.dart';
+import '../Widget/Promotion/promotion_slider.dart';
 import '../Widget/curved edge/CurvedEdgeWidget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -25,7 +30,7 @@ class HomeScreen extends StatelessWidget {
               child: Container(
                 color: AppColor.primaryColor,
                 padding: const EdgeInsets.all(0),
-                child: const SizedBox(
+                child:  const SizedBox(
                   height: 300,
                   child: Column(
                     children: [
@@ -47,7 +52,11 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: AppSize.spacebtwSections),
-                      HomeCategories()
+                      HomeCategories(),
+                      Padding(
+                        padding: EdgeInsets.all(AppSize.defaultSpacing),
+                        child: PromotionSlider(),
+                      ),
                     ],
                   ),
                 ),
@@ -59,3 +68,4 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+

@@ -49,8 +49,9 @@ dependencies:
   google_fonts:
   flutter_native_splash: ^2.3.13
   intl: ^0.19.0
+  carousel_slider:
 
-  # Statemanagment
+  # State Management
   get:
   get_storage:
 
