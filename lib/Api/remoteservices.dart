@@ -1,6 +1,6 @@
 import 'package:http/http.dart' as http;
 
-import '../Pages/ProductScreen/Model/product.dart';
+import '../Presentation_Layer/Pages/ProductScreen/Model/product.dart';
 
 class RemoteServices {
   static var client = http.Client();
