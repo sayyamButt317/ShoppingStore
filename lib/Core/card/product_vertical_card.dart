@@ -53,16 +53,7 @@ class ProductCardVertical extends StatelessWidget {
                   ),
                 ),
                 //Fav Icon button
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(100),
-                    color: dark
-                        ? AppColor.black.withOpacity(0.9)
-                        : AppColor.white.withOpacity(0.9),
-                  ),
-                  child: IconButton(
-                      onPressed: () {}, icon: const Icon(Iconsax.heart5)),
-                ),
+                CircularIcon(dark: dark),
               ],
             ),
           ),
@@ -71,3 +62,4 @@ class ProductCardVertical extends StatelessWidget {
     );
   }
 }
+
