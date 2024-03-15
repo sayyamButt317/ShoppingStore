@@ -56,4 +56,8 @@ class AppStaticText {
       "Your Account Successfully Created";
   static const String yourAccountSubTitle =
       "Welcome to our Ultimate Shopping Destination :Your Account is Created ,Unleash the joy of  Seamless online Shopping ";
+
+
+
+
 }

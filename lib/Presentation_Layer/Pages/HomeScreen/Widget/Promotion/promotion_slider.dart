@@ -5,10 +5,11 @@ import 'package:shoppingstore/Core/Color/colors.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Controller/home_controller.dart';
 
 import '../../../../../Core/Sizes/Size.dart';
+import '../../../../../Presentation/Pages/HomeScreen/Widget/Banner/banner_image.dart';
 import '../Container/circularcontainer.dart';
 
 class PromotionSlider extends StatelessWidget {
-  const PromotionSlider({
+  const PromotionSlider( {
     super.key,
     required this.banners,
   });
@@ -25,7 +26,7 @@ class PromotionSlider extends StatelessWidget {
               viewportFraction: 1,
               onPageChanged: (index, _) =>
                   controller.updatePageIndicator(index)),
-          items: banners.map((url) => RoundedImage(imageUrl: url)).toList(),
+          items: banners.map((url) => BannerImage(imageUrl: url)).toList(),
         ),
         const SizedBox(height: AppSize.spacebtwSections),
         Center(
@@ -38,7 +39,7 @@ class PromotionSlider extends StatelessWidget {
                     width: 20,
                     height: 4,
                     margin: const EdgeInsets.only(right: 10),
-                    backgroundColor: controller.carouselCurrentIndex.value == 1
+                    backgroundColor: controller.carouselCurrentIndex.value == i
                         ? AppColor.primaryColor
                         : AppColor.grey,
                   ),

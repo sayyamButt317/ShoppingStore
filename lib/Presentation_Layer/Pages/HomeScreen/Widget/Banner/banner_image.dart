@@ -3,8 +3,8 @@ import 'package:flutter/cupertino.dart';
 import '../../../../../Core/Color/colors.dart';
 import '../../../../../Core/Sizes/Size.dart';
 
-class BannerImage extends StatelessWidget {
-  const BannerImage({
+class RoundedImage extends StatelessWidget {
+  const RoundedImage({
     super.key,
     this.width,
     this.height,
@@ -58,15 +58,3 @@ class BannerImage extends StatelessWidget {
   }
 }
 
-// child: Container(
-// width: width,
-// height:height,
-// padding: padding,
-// decoration: BoxDecoration(
-// borderRadius: BorderRadius.circular(AppSize.md)),
-// child: ClipRRect(
-// borderRadius: BorderRadius.circular(AppSize.md),
-// child: const Image(
-// image: AssetImage(ImageLink.promoBanner3),fit: BoxFit.contain,),
-// ),
-// ),

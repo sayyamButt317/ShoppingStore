@@ -56,4 +56,15 @@ class ImageLink {
   static const String promoBanner6 = "Assets/images/banners/banner_6.jpg";
   static const String promoBanner7 = "Assets/images/banners/banner_7.jpg";
   static const String promoBanner8 = "Assets/images/banners/banner_8.jpg";
+
+  //Product
+  static const String Product1 = "Assets/images/products/nike-shoes.png";
+  static const String Product2 = "Assets/images/products/NikeAirJOrdonBlackRed.png";
+  static const String Product3= "Assets/images/products/NikeAirJOrdonOrange.png";
+  static const String Product4 = "Assets/images/products/NikeAirJordonSingleBlue.png";
+  static const String Product5 = "Assets/images/products/NikeAirJordonSingleOrange.png";
+  static const String Product6 = "Assets/images/products/NikeAirJordonwhiteMagenta.png";
+  static const String Product7 = "Assets/images/products/NikeAirJOrdonWhiteRed.png";
+  static const String Product8 = "Assets/images/products/NikeAirMax.png";
+  static const String Product9 = "Assets/images/products/NikeWildhorse.png";
 }
