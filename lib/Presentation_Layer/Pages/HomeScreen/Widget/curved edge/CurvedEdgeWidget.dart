@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/cupertino.dart';
 
 import 'curvededge.dart';

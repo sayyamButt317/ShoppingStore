@@ -3,13 +3,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:shoppingstore/Core/Color/colors.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Controller/home_controller.dart';
-
+import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Banner/banner_image.dart';
 import '../../../../../Core/Sizes/Size.dart';
-import '../../../../../Presentation/Pages/HomeScreen/Widget/Banner/banner_image.dart';
 import '../Container/circularcontainer.dart';
 
 class PromotionSlider extends StatelessWidget {
-  const PromotionSlider( {
+  const PromotionSlider({
     super.key,
     required this.banners,
   });
@@ -26,7 +25,7 @@ class PromotionSlider extends StatelessWidget {
               viewportFraction: 1,
               onPageChanged: (index, _) =>
                   controller.updatePageIndicator(index)),
-          items: banners.map((url) => BannerImage(imageUrl: url)).toList(),
+          items: banners.map((url) => RoundedImage(imageUrl: url)).toList(),
         ),
         const SizedBox(height: AppSize.spacebtwSections),
         Center(

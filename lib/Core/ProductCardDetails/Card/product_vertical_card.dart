@@ -2,36 +2,37 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shoppingstore/Core/Helperfunction/helper.dart';
-import 'package:shoppingstore/Core/ImagesLink/imagestring.dart';
 import 'package:shoppingstore/Core/ProductCardDetails/text/product_text.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Views/product_detail.dart';
 import '../../../Presentation_Layer/Pages/HomeScreen/Widget/Banner/banner_image.dart';
 import '../../../Presentation_Layer/Pages/HomeScreen/Widget/Container/circularcontainer.dart';
 import '../../Color/colors.dart';
 import '../../Icon/circular_icon.dart';
+import '../../ImagesLink/imagestring.dart';
 import '../../Shadow/shadow_style.dart';
 import '../../Sizes/Size.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Model/product.dart';
 
-class ProductCardVertical extends StatelessWidget {
-  const ProductCardVertical({super.key, required this.product});
+import '../price/product_price.dart';
 
-  final Product product;
+class ProductCardVertical extends StatelessWidget {
+  const ProductCardVertical({super.key});
+  // final Product product;
 
   @override
   Widget build(BuildContext context) {
     final dark = HelperFunction.boolIsDarkMode(context);
     return GestureDetector(
       onTap: () {
-        Get.to(() => ProductDetail(
-              productName: product.name,
-              productPrice: product.price,
-              productImage: product.imageLink,
-              productDescription: product.description,
-            ));
+        // Get.to(() => ProductDetail(
+        //       productName: product.name,
+        //       productPrice: product.price,
+        //       productImage: product.imageLink,
+        //       productDescription: product.description,
+        //     ));
       },
       child: Container(
-        width: 180,
+        width: 160,
         padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(
           boxShadow: [ShadowStyle.verticalProductShadow],
@@ -48,9 +49,12 @@ class ProductCardVertical extends StatelessWidget {
               child: Stack(
                 children: [
                   //Thumbnail Image
-                  RoundedImage(
-                    imageUrl: product.imageLink,
-                    applyImageRadius: true,
+                  const Center(
+                    child: RoundedImage(
+                      imageUrl: ImageLink.product1,
+                      applyImageRadius: true,
+
+                    ),
                   ),
                   //sale tag
                   Positioned(
@@ -86,14 +90,14 @@ class ProductCardVertical extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   ProductTileText(
-                    title: product.name,
+                    title: "Green Nike Air",
                     smallSize: true,
                   ),
                   const SizedBox(height: AppSize.spacebtwItems / 2),
                   Row(
                     children: [
                       Text(
-                        'Nike',
+                        "Nike",
                         overflow: TextOverflow.ellipsis,
                         maxLines: 1,
                         style: Theme.of(context).textTheme.labelMedium,
@@ -102,7 +106,7 @@ class ProductCardVertical extends StatelessWidget {
                         width: AppSize.xs,
                       ),
                       const Icon(Iconsax.verify5,
-                          color: AppColor.primaryTextColor,
+                          color: AppColor.primaryColor,
                           size: AppSize.iconXs),
                     ],
                   ),
@@ -111,12 +115,7 @@ class ProductCardVertical extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        '\$product.price',
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.headlineMedium,
-                      ),
+                      const ProductPriceText(price:'\$35'),
                       Container(
                         decoration: const BoxDecoration(
                           color: AppColor.darkColor,
