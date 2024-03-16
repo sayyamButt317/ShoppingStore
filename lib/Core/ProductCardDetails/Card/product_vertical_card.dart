@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shoppingstore/Core/Helperfunction/helper.dart';
 import 'package:shoppingstore/Core/ProductCardDetails/text/product_text.dart';
-import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Views/product_detail.dart';
 import '../../../Presentation_Layer/Pages/HomeScreen/Widget/Banner/banner_image.dart';
 import '../../../Presentation_Layer/Pages/HomeScreen/Widget/Container/circularcontainer.dart';
 import '../../Color/colors.dart';
@@ -11,7 +9,6 @@ import '../../Icon/circular_icon.dart';
 import '../../ImagesLink/imagestring.dart';
 import '../../Shadow/shadow_style.dart';
 import '../../Sizes/Size.dart';
-import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Model/product.dart';
 
 import '../price/product_price.dart';
 
@@ -53,7 +50,6 @@ class ProductCardVertical extends StatelessWidget {
                     child: RoundedImage(
                       imageUrl: ImageLink.product1,
                       applyImageRadius: true,
-
                     ),
                   ),
                   //sale tag
@@ -106,8 +102,7 @@ class ProductCardVertical extends StatelessWidget {
                         width: AppSize.xs,
                       ),
                       const Icon(Iconsax.verify5,
-                          color: AppColor.primaryColor,
-                          size: AppSize.iconXs),
+                          color: AppColor.primaryColor, size: AppSize.iconXs),
                     ],
                   ),
 
@@ -115,7 +110,7 @@ class ProductCardVertical extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const ProductPriceText(price:'\$35'),
+                      const ProductPriceText(price: '\$35'),
                       Container(
                         decoration: const BoxDecoration(
                           color: AppColor.darkColor,
