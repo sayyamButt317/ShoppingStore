@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:shoppingstore/Core/Helperfunction/helper.dart';
 import '../../Core/Color/colors.dart';
 import '../../Core/Sizes/Size.dart';
@@ -30,7 +28,7 @@ class StoreScreen extends StatelessWidget {
               backgroundColor: HelperFunction.boolIsDarkMode(context) ? AppColor.darkColor : AppColor.white,
               expandedHeight: 440,
               flexibleSpace: Padding(
-                padding: EdgeInsets.all(AppSize.defaultSpacing),
+                padding: const EdgeInsets.all(AppSize.defaultSpacing),
                 child: ListView(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
