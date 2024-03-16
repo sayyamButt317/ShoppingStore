@@ -12,12 +12,13 @@ class SectionHeading extends StatelessWidget {
   final Color? textColor;
   final bool showActionButton;
   final String title, buttonTitle;
-  final VoidCallback? onPressed;
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text('Popular Categories',
+        Text(title,
             style: Theme.of(context)
                 .textTheme
                 .headlineSmall!

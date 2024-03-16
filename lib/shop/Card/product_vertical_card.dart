@@ -85,7 +85,7 @@ class ProductCardVertical extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  ProductTileText(
+                  const ProductTileText(
                     title: "Green Nike Air",
                     smallSize: true,
                   ),
@@ -106,35 +106,40 @@ class ProductCardVertical extends StatelessWidget {
                     ],
                   ),
 
-                  //price
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const ProductPriceText(price: '\$35'),
-                      Container(
-                        decoration: const BoxDecoration(
-                          color: AppColor.darkColor,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(AppSize.cardRadiusMd),
-                            bottomRight:
-                                Radius.circular(AppSize.productImageRadius),
-                          ),
-                        ),
-                        child: const SizedBox(
-                          width: AppSize.iconLg * 1.2,
-                          height: AppSize.iconLg * 1.2,
-                          child: Center(
-                            child: Icon(
-                              Iconsax.add,
-                              color: AppColor.white,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
                 ],
               ),
+
+            ),
+            const Spacer(),
+            //price
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: AppSize.sm),
+                  child: const ProductPriceText(price: '\$35'),
+                ),
+                Container(
+                  decoration: const BoxDecoration(
+                    color: AppColor.darkColor,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(AppSize.cardRadiusMd),
+                      bottomRight:
+                      Radius.circular(AppSize.productImageRadius),
+                    ),
+                  ),
+                  child: const SizedBox(
+                    width: AppSize.iconLg * 1.2,
+                    height: AppSize.iconLg * 1.2,
+                    child: Center(
+                      child: Icon(
+                        Iconsax.add,
+                        color: AppColor.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),

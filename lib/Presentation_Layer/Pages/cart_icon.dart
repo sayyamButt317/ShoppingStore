@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../Color/colors.dart';
+import '../../Core/Color/colors.dart';
 
 class CartCounterIcon extends StatelessWidget {
   const CartCounterIcon({
@@ -18,7 +18,7 @@ class CartCounterIcon extends StatelessWidget {
       children: [
         IconButton(
             onPressed: () {},
-            icon: const Icon(Iconsax.shopping_bag, color: AppColor.white)),
+            icon: const Icon(Iconsax.shopping_bag, iconColor: AppColor.white)),
         Positioned(
             right: 0,
             child: Container(
