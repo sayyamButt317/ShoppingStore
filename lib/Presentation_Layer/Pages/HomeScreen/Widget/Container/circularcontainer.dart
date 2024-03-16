@@ -11,7 +11,7 @@ class CircularContainer extends StatelessWidget {
     this.radius = AppSize.cardRadiusLg,
     this.child,
     this.padding,
-    this.backgroundColor = AppColor.white,
+    this.backgroundColor ,
     this.margin,
     this.showBorder = false,
     this.borderColor = AppColor.primaryBorderColor,

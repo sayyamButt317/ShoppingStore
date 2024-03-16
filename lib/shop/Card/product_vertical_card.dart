@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shoppingstore/Core/Helperfunction/helper.dart';
-import 'package:shoppingstore/Core/ProductCardDetails/text/product_text.dart';
 import '../../../Presentation_Layer/Pages/HomeScreen/Widget/Banner/banner_image.dart';
 import '../../../Presentation_Layer/Pages/HomeScreen/Widget/Container/circularcontainer.dart';
-import '../../Color/colors.dart';
-import '../../Icon/circular_icon.dart';
-import '../../ImagesLink/imagestring.dart';
-import '../../Shadow/shadow_style.dart';
-import '../../Sizes/Size.dart';
 
+import '../../Core/Color/colors.dart';
+import '../../Core/Icon/circular_icon.dart';
+import '../../Core/ImagesLink/imagestring.dart';
+import '../../Core/Shadow/shadow_style.dart';
+import '../../Core/Sizes/Size.dart';
 import '../price/product_price.dart';
+import '../text/product_text.dart';
 
 class ProductCardVertical extends StatelessWidget {
   const ProductCardVertical({super.key});
@@ -115,9 +115,9 @@ class ProductCardVertical extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: AppSize.sm),
-                  child: const ProductPriceText(price: '\$35'),
+                const Padding(
+                  padding: EdgeInsets.only(left: AppSize.sm),
+                  child: ProductPriceText(price: '\$35'),
                 ),
                 Container(
                   decoration: const BoxDecoration(

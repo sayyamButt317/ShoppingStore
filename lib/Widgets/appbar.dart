@@ -12,7 +12,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.actions,
     this.leadingOnPressed,
     this.showBackArrow = false,
-    required this.backgroundColor,
+     this.backgroundColor,
     this.elevation = 0,
   });
 
@@ -21,8 +21,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final IconData? leadingIcon;
   final List<Widget>? actions;
   final VoidCallback? leadingOnPressed;
-  final Color backgroundColor;
-  final double elevation;
+  final Color? backgroundColor;
+  final double? elevation;
 
   @override
   Widget build(BuildContext context) {

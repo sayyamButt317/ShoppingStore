@@ -1,10 +1,10 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
-
 import '../../../../../Core/Color/colors.dart';
+import '../../../../../Core/Helperfunction/helper.dart';
 import '../../../../../Core/Text/statictext.dart';
-import '../../../../Widgets/appbar.dart';
-import '../../../../../Core/Cart/cart_icon.dart';
+import '../../../../../Widgets/appbar.dart';
+import '../../../cart_icon.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({
@@ -37,8 +37,7 @@ class HomeAppBar extends StatelessWidget {
       ),
       actions: [
         CartCounterIcon(
-          onPressed: () {},
-          iconColor: Colors.white,
+          onPressed: () {}, iconColor: Colors.white,
         )
       ],
     );

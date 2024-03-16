@@ -1,8 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
-
-import '../../Core/ProductCardDetails/Card/product_vertical_card.dart';
 import '../../Core/Sizes/Size.dart';
+import '../../shop/Card/product_vertical_card.dart';
 
 class Gridlayout extends StatelessWidget {
   const Gridlayout({

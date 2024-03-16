@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
-import '../../../Widgets/bottomnavigation.dart';
+import '../../../../Widgets/bottomnavigation.dart';
 
 class OnBoardingController extends GetxController {
   static OnBoardingController get instance => Get.find();

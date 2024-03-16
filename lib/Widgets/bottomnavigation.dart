@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shoppingstore/Core/Helperfunction/helper.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/View/homescreen.dart';
+import 'package:shoppingstore/shop/store/product_store.dart';
 
 import '../../Core/Color/colors.dart';
 
@@ -42,10 +43,8 @@ class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
 
   final screens = [
-    HomeScreen(),
-    Container(
-      color: Colors.black,
-    ),
+    const HomeScreen(),
+    const StoreScreen(),
     Container(color: Colors.red),
     Container(
       color: Colors.grey,

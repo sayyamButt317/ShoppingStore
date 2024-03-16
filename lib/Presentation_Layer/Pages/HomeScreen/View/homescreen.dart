@@ -6,19 +6,19 @@ import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Searchb
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Controller/productcontroller.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Model/product.dart';
 import '../../../../Core/ImagesLink/imagestring.dart';
-import '../../../../Core/ProductCardDetails/Card/product_vertical_card.dart';
-import '../../../Widgets/grid_layout.dart';
-import '../../../Widgets/section_heading.dart';
+import '../../../../Widgets/grid_layout.dart';
+import '../../../../Widgets/section_heading.dart';
+import '../../../../shop/Card/product_vertical_card.dart';
 import '../Widget/Appbar/home_appBar.dart';
 import '../Widget/Category/home_category.dart';
 import '../Widget/Promotion/promotion_slider.dart';
 import '../Widget/curved edge/CurvedEdgeWidget.dart';
 
 class HomeScreen extends StatelessWidget {
-  HomeScreen({super.key});
+  const HomeScreen({super.key});
 
-  var productList = <Product>[];
-  final ProductController productcontroller = Get.put(ProductController());
+  // var productList = <Product>[];
+  // final ProductController productcontroller = Get.put(ProductController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,29 +34,30 @@ class HomeScreen extends StatelessWidget {
               child: Container(
                 color: AppColor.primaryColor,
                 padding: const EdgeInsets.all(0),
-                child: const SizedBox(
+                child:  SizedBox(
                   height: 300,
                   child: Column(
                     children: [
-                      SizedBox(height: AppSize.spacebtwSections),
-                      SearchBarContainer(
+                      const SizedBox(height: AppSize.spacebtwSections),
+                      const SearchBarContainer(
                         text: 'Search in Store',
                       ),
-                      SizedBox(height: AppSize.spacebtwSections),
+                      const SizedBox(height: AppSize.spacebtwSections),
                       Padding(
-                        padding: EdgeInsets.only(left: AppSize.defaultSpacing),
+                        padding: const EdgeInsets.only(left: AppSize.defaultSpacing),
                         child: Column(
                           children: [
+                            //Heading
                             SectionHeading(
-                              title: 'Popular Categories',
-                              showActionButton: false,
+                              title: 'Popular Categories', showActionButton: false,
                               textColor: Colors.white,
+                                onPressed:(){},
                             )
                           ],
                         ),
                       ),
-                      SizedBox(height: AppSize.spacebtwSections),
-                      HomeCategories(),
+                      const SizedBox(height: AppSize.spacebtwSections),
+                      const HomeCategories(),
                     ],
                   ),
                 ),
