@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
               child: Container(
                 color: AppColor.primaryColor,
                 padding: const EdgeInsets.all(0),
-                child:  SizedBox(
+                child: SizedBox(
                   height: 300,
                   child: Column(
                     children: [
@@ -41,14 +41,16 @@ class HomeScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: AppSize.spacebtwSections),
                       Padding(
-                        padding: const EdgeInsets.only(left: AppSize.defaultSpacing),
+                        padding:
+                            const EdgeInsets.only(left: AppSize.defaultSpacing),
                         child: Column(
                           children: [
                             //Heading
                             SectionHeading(
-                              title: 'Popular Categories', showActionButton: false,
+                              title: 'Popular Categories',
+                              showActionButton: false,
                               textColor: Colors.white,
-                                onPressed:(){},
+                              onPressed: () {},
                             )
                           ],
                         ),
@@ -61,7 +63,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             //Slider
-             Padding(
+            Padding(
               padding: const EdgeInsets.all(AppSize.defaultSpacing),
               child: Column(
                 children: [
@@ -71,7 +73,9 @@ class HomeScreen extends StatelessWidget {
                     ImageLink.promoBanner3
                   ]),
                   //Products
-                  Gridlayout(itemCount: 10,itemBuilder: (_,index) =>const ProductCardVertical()),
+                  Gridlayout(
+                      itemCount: 10,
+                      itemBuilder: (_, index) => const ProductCardVertical()),
                 ],
               ),
             ),
