@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/OnBoarding/View/onboardingscreen.dart';
-
-import 'Core/Theme/app_theme.dart';
+import 'config/Theme/app_theme.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(

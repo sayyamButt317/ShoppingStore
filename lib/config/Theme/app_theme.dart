@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:shoppingstore/Core/Theme/bottomsheet_theme.dart';
-import 'package:shoppingstore/Core/Theme/checkox_theme.dart';
-import 'package:shoppingstore/Core/Theme/outlinebutton_theme.dart';
-import 'package:shoppingstore/Core/Theme/text_theme.dart';
-import 'package:shoppingstore/Core/Theme/textform_theme.dart';
+import 'package:shoppingstore/config/Theme/text_theme.dart';
+import 'package:shoppingstore/config/Theme/textform_theme.dart';
 
+import 'bottomsheet_theme.dart';
+import 'checkox_theme.dart';
 import 'chip_theme.dart';
 import 'elevatedbutton_theme.dart';
+import 'outlinebutton_theme.dart';
 
 class AppTheme {
   AppTheme._();

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../Color/colors.dart';
-import '../Sizes/Size.dart';
+import '../../Core/Color/colors.dart';
+import '../../Core/Sizes/Size.dart';
+
 
 class AppbarTheme {
   AppbarTheme._();

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:shoppingstore/Core/Helperfunction/helper.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Container/circularcontainer.dart';
-import '../../../Core/Color/colors.dart';
-import '../../../Core/ImagesLink/imagestring.dart';
-import '../../../Core/Sizes/Size.dart';
-import '../../../Widgets/appbar.dart';
-import '../../../Widgets/circular_image.dart';
-import '../../../Widgets/section_heading.dart';
-import '../HomeScreen/Widget/Searchbar/searchbar_container.dart';
-import '../cart_icon.dart';
+import '../../../../Core/Color/colors.dart';
+import '../../../../Core/ImagesLink/imagestring.dart';
+import '../../../../Core/Sizes/Size.dart';
+import '../../../../Widgets/appbar.dart';
+import '../../../../Widgets/circular_image.dart';
+import '../../../../Widgets/section_heading.dart';
+import '../../HomeScreen/Widget/Searchbar/searchbar_container.dart';
+import '../../../../shop/carticon/cart_icon.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -44,7 +44,7 @@ class StoreScreen extends StatelessWidget {
                       height: AppSize.spacebtwItems,
                     ),
                     const SearchBarContainer(
-                      text: 'Search in store',
+                      text: 'Search in Store_Screen',
                       showBorder: true,
                       showBackground: false,
                       padding: EdgeInsets.zero,

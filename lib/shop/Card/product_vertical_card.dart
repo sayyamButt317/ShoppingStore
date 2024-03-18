@@ -90,21 +90,7 @@ class ProductCardVertical extends StatelessWidget {
                     smallSize: true,
                   ),
                   const SizedBox(height: AppSize.spacebtwItems / 2),
-                  Row(
-                    children: [
-                      Text(
-                        "Nike",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(
-                        width: AppSize.xs,
-                      ),
-                      const Icon(Iconsax.verify5,
-                          color: AppColor.primaryColor, size: AppSize.iconXs),
-                    ],
-                  ),
+                  ProductTitleWithVerificationIcon(),
 
                 ],
               ),
@@ -144,6 +130,31 @@ class ProductCardVertical extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class ProductTitleWithVerificationIcon extends StatelessWidget {
+  const ProductTitleWithVerificationIcon({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Text(
+          "Nike",
+          overflow: TextOverflow.ellipsis,
+          maxLines: 1,
+          style: Theme.of(context).textTheme.labelMedium,
+        ),
+        const SizedBox(
+          width: AppSize.xs,
+        ),
+        const Icon(Iconsax.verify5,
+            color: AppColor.primaryColor, size: AppSize.iconXs),
+      ],
     );
   }
 }

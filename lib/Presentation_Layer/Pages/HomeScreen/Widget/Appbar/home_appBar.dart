@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../../Core/Color/colors.dart';
 import '../../../../../Core/Text/statictext.dart';
 import '../../../../../Widgets/appbar.dart';
-import '../../../cart_icon.dart';
+import '../../../../../shop/carticon/cart_icon.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({
