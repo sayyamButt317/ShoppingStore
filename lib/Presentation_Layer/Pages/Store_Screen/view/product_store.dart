@@ -33,7 +33,7 @@ class StoreScreen extends StatelessWidget {
               pinned: true,
               floating: true,
               backgroundColor: HelperFunction.boolIsDarkMode(context)
-                  ? AppColor.darkColor
+                  ? AppColor.black
                   : AppColor.white,
               expandedHeight: 440,
               flexibleSpace: Padding(
@@ -53,7 +53,7 @@ class StoreScreen extends StatelessWidget {
                       padding: EdgeInsets.zero,
                     ),
                     const SizedBox(
-                      height: AppSize.spacebtwItems,
+                      height: AppSize.spacebtwSections,
                     ),
 
                     //Featured Brands
@@ -61,53 +61,41 @@ class StoreScreen extends StatelessWidget {
                     const SizedBox(
                       height: AppSize.spacebtwItems / 1.5,
                     ),
-                    Gridlayout(
-                      itemCount: 4,
-                      itemBuilder: (_, index) {
-                        return GestureDetector(
-                          onTap: () {},
-                          child: CircularContainer(
-                            padding: const EdgeInsets.all(AppSize.sm),
-                            showBorder: true,
-                            backgroundColor: Colors.transparent,
-                            child: Row(
-                              children: [
-                                //Icon
-                                CircularImage(
-                                  isNetworkImage: false,
-                                  image: ImageLink.clothIcon,
-                                  backgroundColor: Colors.transparent,
-                                  overlayColor:
-                                      HelperFunction.boolIsDarkMode(context)
-                                          ? AppColor.white
-                                          : AppColor.black,
-                                ),
-                                const SizedBox(
-                                    height: AppSize.spacebtwItems / 2),
-
-                                //Text
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    const BrandTitleWithVerificationIcon(
-                                      title: 'Nike',
-                                      brandTextSize: TextSizes.large,
-                                    ),
-                                    Text(
-                                      '256 Products',
-                                      overflow: TextOverflow.ellipsis,
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .labelMedium,
-                                    ),
-                                  ],
-                                )
-                              ],
-                            ),
-                          ),
-                        );
-                      },
-                    )
+                    // CircularContainer(
+                    //   padding: const EdgeInsets.all(AppSize.sm),
+                    //   showBorder: true,
+                    //   backgroundColor: Colors.transparent,
+                    //   child: Row(
+                    //     children: [
+                    //       //Icon
+                    //       CircularImage(
+                    //         isNetworkImage: false,
+                    //         image: ImageLink.clothIcon,
+                    //         backgroundColor: Colors.transparent,
+                    //         overlayColor: HelperFunction.boolIsDarkMode(context)
+                    //             ? AppColor.white
+                    //             : AppColor.black,
+                    //       ),
+                    //       const SizedBox(height: AppSize.spacebtwItems / 2),
+                    //
+                    //       //Text
+                    //       Column(
+                    //         crossAxisAlignment: CrossAxisAlignment.start,
+                    //         children: [
+                    //           const BrandTitleWithVerificationIcon(
+                    //             title: 'Nike',
+                    //             brandTextSize: TextSizes.large,
+                    //           ),
+                    //           Text(
+                    //             '256 Products',
+                    //             overflow: TextOverflow.ellipsis,
+                    //             style: Theme.of(context).textTheme.labelMedium,
+                    //           ),
+                    //         ],
+                    //       )
+                    //     ],
+                    //   ),
+                    // ),
                   ],
                 ),
               ),

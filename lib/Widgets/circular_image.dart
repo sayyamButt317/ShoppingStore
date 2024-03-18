@@ -31,19 +31,20 @@ class CircularImage extends StatelessWidget {
     return Container(
       width: width,
       height: height,
-      padding: const EdgeInsets.all(AppSize.sm),
+      padding:  EdgeInsets.all(padding),
       decoration: BoxDecoration(
-        color: HelperFunction.boolIsDarkMode(context)
-            ? AppColor.black
-            : AppColor.white,
+        //if image background color is null then switch it into  light and dark mode color design
+        color: backgroundColor ?? (HelperFunction.boolIsDarkMode(context) ? AppColor.black : AppColor.white),
         borderRadius: BorderRadius.circular(100),
       ),
-      child: Image(
-          fit: fit,
-          image: isNetworkImage
-              ? NetworkImage(image)
-              : AssetImage(image) as ImageProvider,
-          color: overlayColor),
+      child: Center(
+        child: Image(
+            fit: fit,
+            image: isNetworkImage
+                ? NetworkImage(image)
+                : AssetImage(image) as ImageProvider,
+            color: overlayColor),
+      ),
     );
   }
 }
