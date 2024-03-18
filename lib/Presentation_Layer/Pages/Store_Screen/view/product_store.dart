@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:shoppingstore/Core/Enum/enum.dart';
 import 'package:shoppingstore/Core/Helperfunction/helper.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Container/circularcontainer.dart';
+import 'package:shoppingstore/Widgets/grid_layout.dart';
+import 'package:shoppingstore/Widgets/producttitle_withverificationicon.dart';
 import '../../../../Core/Color/colors.dart';
 import '../../../../Core/ImagesLink/imagestring.dart';
 import '../../../../Core/Sizes/Size.dart';
@@ -58,34 +61,53 @@ class StoreScreen extends StatelessWidget {
                     const SizedBox(
                       height: AppSize.spacebtwItems / 1.5,
                     ),
-                    CircularContainer(
-                      padding: EdgeInsets.all(AppSize.sm),
-                      showBorder: true,
-                      backgroundColor: Colors.transparent,
-                      child: Row(
-                        children: [
-                          //Icon
-                          CircularImage(
-                            isNetworkImage: false,
-                            image: ImageLink.clothIcon,
+                    Gridlayout(
+                      itemCount: 4,
+                      itemBuilder: (_, index) {
+                        return GestureDetector(
+                          onTap: () {},
+                          child: CircularContainer(
+                            padding: const EdgeInsets.all(AppSize.sm),
+                            showBorder: true,
                             backgroundColor: Colors.transparent,
-                            overlayColor: HelperFunction.boolIsDarkMode(context)
-                                ? AppColor.white
-                                : AppColor.black,
+                            child: Row(
+                              children: [
+                                //Icon
+                                CircularImage(
+                                  isNetworkImage: false,
+                                  image: ImageLink.clothIcon,
+                                  backgroundColor: Colors.transparent,
+                                  overlayColor:
+                                      HelperFunction.boolIsDarkMode(context)
+                                          ? AppColor.white
+                                          : AppColor.black,
+                                ),
+                                const SizedBox(
+                                    height: AppSize.spacebtwItems / 2),
+
+                                //Text
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    const BrandTitleWithVerificationIcon(
+                                      title: 'Nike',
+                                      brandTextSize: TextSizes.large,
+                                    ),
+                                    Text(
+                                      '256 Products',
+                                      overflow: TextOverflow.ellipsis,
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .labelMedium,
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
-                          const SizedBox(
-                            height: AppSize.spacebtwItems /2),
-
-
-                          //Text
-                          Column(
-                            children: [
-
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
+                        );
+                      },
+                    )
                   ],
                 ),
               ),

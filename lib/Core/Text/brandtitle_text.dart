@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:shoppingstore/Core/Sizes/Size.dart';
+import 'package:shoppingstore/Core/Enum/enum.dart';
 
 class BrandTextTitle extends StatelessWidget {
   const BrandTextTitle({
@@ -10,14 +8,14 @@ class BrandTextTitle extends StatelessWidget {
     required this.title,
     required this.maxLines,
     this.textAlign = TextAlign.center,
-    this.brandTextSize = AppSize.sm,
+    this.brandTextSize = TextSizes.small,
   });
 
   final Color? color;
   final String title;
   final int maxLines;
   final TextAlign? textAlign;
-  final AppSize brandTextSize;
+  final TextSizes brandTextSize;
 
   @override
   Widget build(BuildContext context) {
@@ -28,11 +26,11 @@ class BrandTextTitle extends StatelessWidget {
       overflow: TextOverflow.ellipsis,
 
       //check which brand style require and set that style
-      style: brandTextSize == AppSize.fontSizeSm
+      style: brandTextSize == TextSizes.small
           ? Theme.of(context).textTheme.labelMedium!.apply(color: color)
-          : brandTextSize == AppSize.fontSizeMd
+          : brandTextSize == TextSizes.medium
               ? Theme.of(context).textTheme.bodyLarge!.apply(color: color)
-              : brandTextSize == AppSize.fontSizeLg
+              : brandTextSize == TextSizes.large
                   ? Theme.of(context).textTheme.titleLarge!.apply(color: color)
                   : Theme.of(context).textTheme.bodyMedium!.apply(color: color),
     );

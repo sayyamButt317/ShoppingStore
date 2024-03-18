@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shoppingstore/Core/Helperfunction/helper.dart';
+import 'package:shoppingstore/Widgets/producttitle_withverificationicon.dart';
 import '../../../Presentation_Layer/Pages/HomeScreen/Widget/Banner/banner_image.dart';
 import '../../../Presentation_Layer/Pages/HomeScreen/Widget/Container/circularcontainer.dart';
 
@@ -80,21 +81,21 @@ class ProductCardVertical extends StatelessWidget {
             ),
             const SizedBox(height: AppSize.spacebtwItems / 2),
             //Detail
-            Padding(
-              padding: const EdgeInsets.only(left: AppSize.sm),
+            const Padding(
+              padding: EdgeInsets.only(left: AppSize.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const ProductTileText(
+                  ProductTileText(
                     title: "Green Nike Air",
                     smallSize: true,
                   ),
-                  const SizedBox(height: AppSize.spacebtwItems / 2),
-                  ProductTitleWithVerificationIcon(),
-
+                  SizedBox(height: AppSize.spacebtwItems / 2),
+                  BrandTitleWithVerificationIcon(
+                    title: 'Nike',
+                  ),
                 ],
               ),
-
             ),
             const Spacer(),
             //price
@@ -110,8 +111,7 @@ class ProductCardVertical extends StatelessWidget {
                     color: AppColor.darkColor,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(AppSize.cardRadiusMd),
-                      bottomRight:
-                      Radius.circular(AppSize.productImageRadius),
+                      bottomRight: Radius.circular(AppSize.productImageRadius),
                     ),
                   ),
                   child: const SizedBox(
@@ -130,31 +130,6 @@ class ProductCardVertical extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-class ProductTitleWithVerificationIcon extends StatelessWidget {
-  const ProductTitleWithVerificationIcon({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Text(
-          "Nike",
-          overflow: TextOverflow.ellipsis,
-          maxLines: 1,
-          style: Theme.of(context).textTheme.labelMedium,
-        ),
-        const SizedBox(
-          width: AppSize.xs,
-        ),
-        const Icon(Iconsax.verify5,
-            color: AppColor.primaryColor, size: AppSize.iconXs),
-      ],
     );
   }
 }
