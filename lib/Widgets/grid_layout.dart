@@ -14,17 +14,18 @@ final Widget? Function(BuildContext,int)itemBuilder;
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      itemCount: 10,
+      itemCount: itemCount,
       shrinkWrap: true,
       padding: EdgeInsets.zero,
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate:
-      const SliverGridDelegateWithFixedCrossAxisCount(
+       SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           mainAxisSpacing: AppSize.gridViewSpacing,
           crossAxisSpacing: AppSize.gridViewSpacing,
-          mainAxisExtent: 288),
-      itemBuilder: (_, index) => const ProductCardVertical(),
+          mainAxisExtent: mainAxisExtent,
+      ),
+      itemBuilder:itemBuilder,
     );
   }
 }
