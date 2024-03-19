@@ -4,7 +4,6 @@ import 'package:shoppingstore/Core/Helperfunction/helper.dart';
 
 import '../Color/colors.dart';
 import '../Devicesize/deviceutils.dart';
-import '../Sizes/Size.dart';
 
 class AppTabBar extends StatelessWidget implements PreferredSizeWidget {
   const AppTabBar({super.key, required this.tabs});
@@ -26,6 +25,5 @@ class AppTabBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  // TODO: implement preferredSize
   Size get preferredSize => Size.fromHeight(AppDeviceUtils.appBarHeight());
 }
