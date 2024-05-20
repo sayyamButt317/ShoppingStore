@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shoppingstore/Core/Helperfunction/helper.dart';
 import 'package:shoppingstore/Widgets/producttitle_withverificationicon.dart';
 import '../../../Presentation_Layer/Pages/HomeScreen/Widget/Banner/banner_image.dart';
 import '../../../Presentation_Layer/Pages/HomeScreen/Widget/Container/circularcontainer.dart';
-
+import 'package:cached_network_image/cached_network_image.dart';
 import '../../Core/Color/colors.dart';
 import '../../Core/Icon/circular_icon.dart';
 import '../../Core/Shadow/shadow_style.dart';
@@ -24,14 +25,12 @@ class ProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = HelperFunction.boolIsDarkMode(context);
     return GestureDetector(
-      onTap: () {
-        // Get.to(() => ProductDetail(
-        //   productName: product.name,
-        //   productPrice: product.price,
-        //   productImage: product.imageLink,
-        //   productDescription: product.description,
-        // ));
-      },
+      onTap: () =>
+        Get.to(() => ProductDetail(
+          product:product
+        )
+        ),
+     
       child: Container(
         width: 160,
         padding: const EdgeInsets.all(1),
@@ -53,10 +52,11 @@ class ProductCardVertical extends StatelessWidget {
                   Center(
                       child: ClipRRect(
                           borderRadius: BorderRadius.circular(8.0),
-                          child: Image.network(
+                           child: Image.network(
                             product.imageLink,
                             fit: BoxFit.cover,
-                          ))),
+                          )
+                          )),
                   //sale tag
                   Positioned(
                     top: 12,

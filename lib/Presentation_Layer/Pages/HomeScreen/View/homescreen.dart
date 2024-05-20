@@ -78,12 +78,18 @@ class HomeScreen extends StatelessWidget {
                   FutureBuilder(
                     future: ProductController().fetchProducts(),
                     builder: (context, snapshot) {
-                      return Gridlayout(
+                      if (snapshot.connectionState == ConnectionState.waiting) {
+                        return const Center(child: CircularProgressIndicator());
+                      } else if (snapshot.hasError) {
+                        return Center(child: Text('Error: ${snapshot.error}'));
+                      } else { 
+                        return Gridlayout(
                         itemCount: productcontroller.productList.length,
                         itemBuilder: (_, index) => ProductCardVertical(
                           product: productcontroller.productList[index],
                         ),
                       );
+                      }
                     },
                   ),
                 ],
