@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shoppingstore/Core/Helperfunction/helper.dart';
 
@@ -15,12 +14,12 @@ class AppTabBar extends StatelessWidget implements PreferredSizeWidget {
     return Material(
       color: dark ? AppColor.black : AppColor.white,
       child: TabBar(
-          tabs: tabs,
-          isScrollable: true,
-          indicatorColor: AppColor.primaryColor,
-          unselectedLabelColor: AppColor.darkerGrey,
-          labelColor: dark ? AppColor.white : AppColor.primaryColor,
-          ),
+        tabs: tabs,
+        isScrollable: true,
+        indicatorColor: AppColor.primaryColor,
+        unselectedLabelColor: AppColor.darkerGrey,
+        labelColor: dark ? AppColor.white : AppColor.primaryColor,
+      ),
     );
   }
 

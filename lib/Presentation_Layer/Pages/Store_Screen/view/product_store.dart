@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shoppingstore/Core/Enum/enum.dart';
 import 'package:shoppingstore/Core/Helperfunction/helper.dart';
@@ -125,13 +124,15 @@ class StoreScreen extends StatelessWidget {
                   ),
                 ),
                 //Tabs
-                bottom: AppTabBar(tabs: [
-                  Tab(child: Text('Sports')),
-                  Tab(child: Text('Furniture')),
-                  Tab(child: Text('Electronics')),
-                  Tab(child: Text('Cloths')),
-                  Tab(child: Text('Cosmetics')),
-                ],),
+                bottom: const AppTabBar(
+                  tabs: [
+                    Tab(child: Text('Sports')),
+                    Tab(child: Text('Furniture')),
+                    Tab(child: Text('Electronics')),
+                    Tab(child: Text('Cloths')),
+                    Tab(child: Text('Cosmetics')),
+                  ],
+                ),
               ),
             ];
           },
@@ -141,4 +142,3 @@ class StoreScreen extends StatelessWidget {
     );
   }
 }
-

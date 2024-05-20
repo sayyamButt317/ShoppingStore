@@ -7,7 +7,6 @@ import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/View/homescree
 import '../../Core/Color/colors.dart';
 import '../Presentation_Layer/Pages/Store_Screen/view/product_store.dart';
 
-
 class BottomNavigation extends StatelessWidget {
   const BottomNavigation({super.key});
 
@@ -44,7 +43,7 @@ class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
 
   final screens = [
-    const HomeScreen(),
+    HomeScreen(),
     const StoreScreen(),
     Container(color: Colors.red),
     Container(

@@ -57,4 +57,3 @@ class RoundedImage extends StatelessWidget {
     );
   }
 }
-

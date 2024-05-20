@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shoppingstore/Core/Helperfunction/helper.dart';
 import 'package:shoppingstore/Widgets/producttitle_withverificationicon.dart';
@@ -7,15 +8,17 @@ import '../../../Presentation_Layer/Pages/HomeScreen/Widget/Container/circularco
 
 import '../../Core/Color/colors.dart';
 import '../../Core/Icon/circular_icon.dart';
-import '../../Core/ImagesLink/imagestring.dart';
 import '../../Core/Shadow/shadow_style.dart';
 import '../../Core/Sizes/Size.dart';
+import '../../Presentation_Layer/Pages/ProductScreen/Model/product.dart';
+import '../../Presentation_Layer/Pages/ProductScreen/Views/product_detail.dart';
 import '../price/product_price.dart';
 import '../text/product_text.dart';
 
 class ProductCardVertical extends StatelessWidget {
-  const ProductCardVertical({super.key});
-  // final Product product;
+  final Product product;
+
+  const ProductCardVertical({super.key, required this.product});
 
   @override
   Widget build(BuildContext context) {
@@ -23,11 +26,11 @@ class ProductCardVertical extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         // Get.to(() => ProductDetail(
-        //       productName: product.name,
-        //       productPrice: product.price,
-        //       productImage: product.imageLink,
-        //       productDescription: product.description,
-        //     ));
+        //   productName: product.name,
+        //   productPrice: product.price,
+        //   productImage: product.imageLink,
+        //   productDescription: product.description,
+        // ));
       },
       child: Container(
         width: 160,
@@ -47,12 +50,13 @@ class ProductCardVertical extends StatelessWidget {
               child: Stack(
                 children: [
                   //Thumbnail Image
-                  const Center(
-                    child: RoundedImage(
-                      imageUrl: ImageLink.product1,
-                      applyImageRadius: true,
-                    ),
-                  ),
+                  Center(
+                      child: ClipRRect(
+                          borderRadius: BorderRadius.circular(8.0),
+                          child: Image.network(
+                            product.imageLink,
+                            fit: BoxFit.cover,
+                          ))),
                   //sale tag
                   Positioned(
                     top: 12,
@@ -81,17 +85,17 @@ class ProductCardVertical extends StatelessWidget {
             ),
             const SizedBox(height: AppSize.spacebtwItems / 2),
             //Detail
-            const Padding(
-              padding: EdgeInsets.only(left: AppSize.sm),
+            Padding(
+              padding: const EdgeInsets.only(left: AppSize.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   ProductTileText(
-                    title: "Green Nike Air",
+                    title: product.name,
                     smallSize: true,
                   ),
-                  SizedBox(height: AppSize.spacebtwItems / 2),
-                  BrandTitleWithVerificationIcon(
+                  const SizedBox(height: AppSize.spacebtwItems / 2),
+                  const BrandTitleWithVerificationIcon(
                     title: 'Nike',
                   ),
                 ],
@@ -102,9 +106,9 @@ class ProductCardVertical extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Padding(
-                  padding: EdgeInsets.only(left: AppSize.sm),
-                  child: ProductPriceText(price: '\$35'),
+                Padding(
+                  padding: const EdgeInsets.only(left: AppSize.sm),
+                  child: ProductPriceText(price: product.price),
                 ),
                 Container(
                   decoration: const BoxDecoration(

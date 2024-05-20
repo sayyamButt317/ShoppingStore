@@ -14,10 +14,10 @@ class ProductTile extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Get.to(() => ProductDetail(
-              productName: product.name,
-              productPrice: product.price,
-              productImage: product.imageLink,
-              productDescription: product.description,
+            // productName: product.name,
+            // productPrice: product.price,
+            // productImage: product.imageLink,
+            // productDescription: product.description,
             ));
       },
       child: Card(
