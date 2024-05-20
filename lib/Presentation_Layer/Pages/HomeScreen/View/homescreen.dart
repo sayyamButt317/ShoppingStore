@@ -12,7 +12,6 @@ import '../../ProductScreen/Model/product.dart';
 import '../Widget/Appbar/home_appBar.dart';
 import '../Widget/Category/home_category.dart';
 import '../Widget/Promotion/promotion_slider.dart';
-import '../Widget/curved edge/CurvedEdgeWidget.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
