@@ -11,7 +11,7 @@ import '../../Core/Icon/circular_icon.dart';
 import '../../Core/Shadow/shadow_style.dart';
 import '../../Core/Sizes/Size.dart';
 import '../../Presentation_Layer/Pages/ProductScreen/Model/product.dart';
-import '../../Presentation_Layer/Pages/ProductScreen/Views/product_detail.dart';
+import '../../Presentation_Layer/Pages/ProductScreen/Views/product_image_slider.dart';
 import '../price/product_price.dart';
 import '../text/product_text.dart';
 
