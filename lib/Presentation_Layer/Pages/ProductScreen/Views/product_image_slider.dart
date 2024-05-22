@@ -18,7 +18,9 @@ class ProductDetail extends StatelessWidget {
             ProductImageSlider(dark: dark, product: product),
 
             //Product Details
-            const Ratingandshare()
+             Ratingandshare(product: product,),
+
+            //
           ],
         ),
       ),

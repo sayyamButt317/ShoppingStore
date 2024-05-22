@@ -2,12 +2,13 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shoppingstore/Core/Sizes/Size.dart';
+import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Model/product.dart';
 
 class Ratingandshare extends StatelessWidget {
   const Ratingandshare({
-    super.key,
+    super.key, required this.product,
   });
-
+final Product product;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -31,7 +32,7 @@ class Ratingandshare extends StatelessWidget {
                   ),
                   Text.rich(TextSpan(children: [
                     TextSpan(
-                        text: '5.0',
+                        text: product.rating.toString(),
                         style: Theme.of(context).textTheme.bodyLarge),
                     const TextSpan(text: '(199)'),
                   ]))
