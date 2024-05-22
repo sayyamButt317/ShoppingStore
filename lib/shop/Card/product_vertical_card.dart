@@ -4,12 +4,11 @@ import 'package:iconsax/iconsax.dart';
 import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 import 'package:shoppingstore/Widgets/producttitle_withverificationicon.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import '../../../Presentation_Layer/Pages/HomeScreen/Widget/Banner/banner_image.dart';
 import '../../../Presentation_Layer/Pages/HomeScreen/Widget/Container/circularcontainer.dart';
 import '../../Utils/Color/colors.dart';
 import '../../Utils/Icon/circular_icon.dart';
 import '../../Utils/Shadow/shadow_style.dart';
-import '../../Utils/Sizes/Size.dart';
+import '../../Utils/Sizes/app_size.dart';
 import '../../Presentation_Layer/Pages/ProductScreen/Model/product.dart';
 import '../../Presentation_Layer/Pages/ProductScreen/Views/product_image_slider.dart';
 import '../price/product_price.dart';
@@ -54,8 +53,8 @@ class ProductCardVertical extends StatelessWidget {
                           child: CachedNetworkImage(
                             imageUrl: product.imageLink,
                             fit: BoxFit.cover,
-                            placeholder: (context, url) => CircularProgressIndicator(),
-                            errorWidget: (context, url, error) => Icon(Icons.error),
+                            placeholder: (context, url) => const CircularProgressIndicator(),
+                            errorWidget: (context, url, error) => const Icon(Icons.error),
                           ),
                       ),
                   ),

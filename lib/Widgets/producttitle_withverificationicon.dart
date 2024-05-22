@@ -5,7 +5,7 @@ import 'package:shoppingstore/Utils/Enum/enum.dart';
 import 'package:shoppingstore/Utils/Text/brandtitle_text.dart';
 
 import '../Utils/Color/colors.dart';
-import '../Utils/Sizes/Size.dart';
+import '../Utils/Sizes/app_size.dart';
 
 class BrandTitleWithVerificationIcon extends StatelessWidget {
   const BrandTitleWithVerificationIcon({

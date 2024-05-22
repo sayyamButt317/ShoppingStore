@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shoppingstore/Utils/Color/colors.dart';
-import 'package:shoppingstore/Utils/Sizes/Size.dart';
+import 'package:shoppingstore/Utils/Sizes/app_size.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Searchbar/searchbar_container.dart';
 import '../../../../Utils/ImagesLink/imagestring.dart';
 import '../../../../Widgets/grid_layout.dart';
@@ -9,14 +9,14 @@ import '../../../../Widgets/section_heading.dart';
 import '../../../../shop/Card/product_vertical_card.dart';
 import '../../ProductScreen/Controller/productcontroller.dart';
 import '../../ProductScreen/Model/product.dart';
-import '../Widget/Appbar/home_appBar.dart';
+import '../Widget/Appbar/home_appbar.dart';
 import '../Widget/Category/home_category.dart';
 import '../Widget/Promotion/promotion_slider.dart';
 
 class HomeScreen extends StatelessWidget {
-  HomeScreen({super.key});
+   HomeScreen({super.key});
 
-  var productList = <Product>[];
+  final productList = <Product>[];
   final ProductController productcontroller = Get.put(ProductController());
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,4 @@
-// ignore: file_names
+
 import 'package:flutter/material.dart';
 import '../../../../../Utils/Color/colors.dart';
 import '../../../../../Utils/Text/statictext.dart';

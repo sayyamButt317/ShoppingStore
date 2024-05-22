@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 
 import '../../../../../Utils/Color/colors.dart';
 import 'circularcontainer.dart';
-import '../curved edge/CurvedEdgeWidget.dart';
+import '../curved edge/curvededge_widget.dart';
 
 class PrimaryHeadContainer extends StatelessWidget {
   const PrimaryHeadContainer({

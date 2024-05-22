@@ -24,7 +24,7 @@ class ProductDetail extends StatelessWidget {
               //Price & sale price
               ProductMetaData(product: product,),
 
-              ProductAttributes(),
+              ProductAttributes(product: product,),
 
             //
           ],

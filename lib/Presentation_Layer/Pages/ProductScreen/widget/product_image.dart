@@ -8,8 +8,8 @@ import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Banner/
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Model/product.dart';
 import 'package:shoppingstore/Widgets/appbar.dart';
 
-import '../../../../Utils/Sizes/Size.dart';
-import '../../HomeScreen/Widget/curved edge/CurvedEdgeWidget.dart';
+import '../../../../Utils/Sizes/app_size.dart';
+import '../../HomeScreen/Widget/curved edge/curvededge_widget.dart';
 
 class ProductImageSlider extends StatelessWidget {
   const ProductImageSlider({

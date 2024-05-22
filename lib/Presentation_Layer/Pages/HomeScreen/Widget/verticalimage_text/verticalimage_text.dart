@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 
 import '../../../../../Utils/Color/colors.dart';
-import '../../../../../Utils/Sizes/Size.dart';
+import '../../../../../Utils/Sizes/app_size.dart';
 
 class VerticalImageText extends StatelessWidget {
   const VerticalImageText({

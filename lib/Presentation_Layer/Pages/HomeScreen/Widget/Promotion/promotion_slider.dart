@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:shoppingstore/Utils/Color/colors.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Controller/home_controller.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Banner/banner_image.dart';
-import '../../../../../Utils/Sizes/Size.dart';
+import '../../../../../Utils/Sizes/app_size.dart';
 import '../Container/circularcontainer.dart';
 
 class PromotionSlider extends StatelessWidget {

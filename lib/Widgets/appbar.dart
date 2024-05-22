@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../Utils/Devicesize/deviceutils.dart';
-import '../Utils/Sizes/Size.dart';
+import '../Utils/Sizes/app_size.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({

@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:shoppingstore/Utils/Sizes/Size.dart';
+import 'package:shoppingstore/Utils/Sizes/app_size.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Model/product.dart';
 
 class Ratingandshare extends StatelessWidget {

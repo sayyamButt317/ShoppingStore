@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shoppingstore/Utils/Color/colors.dart';
 import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 import 'package:shoppingstore/Utils/ImagesLink/imagestring.dart';
-import 'package:shoppingstore/Utils/Sizes/Size.dart';
-import 'package:shoppingstore/Utils/Text/brandtitle_text.dart';
+import 'package:shoppingstore/Utils/Sizes/app_size.dart';
 import 'package:shoppingstore/Utils/Text/product_title_text.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Container/circularcontainer.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Model/product.dart';
@@ -26,6 +25,7 @@ class ProductMetaData extends StatelessWidget {
             backgroundColor: AppColor.secondaryColor.withOpacity(0.8),
             padding: const EdgeInsets.symmetric(
                 horizontal: AppSize.sm, vertical: AppSize.xs),
+            //discount percentage
             child: Text(
               '25%',
               style: Theme.of(context)
@@ -37,17 +37,9 @@ class ProductMetaData extends StatelessWidget {
           const SizedBox(
             width: AppSize.spacebtwItems,
           ),
-
-          //price
+          //Actual Price
           Text(
-            product.priceSign,
-            style: Theme.of(context)
-                .textTheme
-                .titleLarge!
-                .apply(color: dark ? Colors.white : Colors.black),
-          ),
-          Text(
-            product.price,
+            '\$30',
             style: Theme.of(context)
                 .textTheme
                 .titleLarge!
@@ -56,7 +48,8 @@ class ProductMetaData extends StatelessWidget {
           const SizedBox(
             width: AppSize.spacebtwItems,
           ),
-          const ProductPriceText(price: '\$30', isLarge: true),
+          //discount price
+           ProductPriceText(price: product.price, isLarge: true,),
         ],
       ),
 
@@ -72,7 +65,10 @@ class ProductMetaData extends StatelessWidget {
       Row(
         children: [
           const ProductTitleText(title: "Status"),
-          Text('InStock', style: Theme.of(context).textTheme.titleMedium),
+          const SizedBox(
+        width: AppSize.spacebtwItems / 1.5,
+      ),
+          Text('In Stock', style: Theme.of(context).textTheme.titleMedium),
         ],
       ),
       const SizedBox(

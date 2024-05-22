@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shoppingstore/Utils/Devicesize/deviceutils.dart';
-import 'package:shoppingstore/Utils/Sizes/Size.dart';
+import 'package:shoppingstore/Utils/Sizes/app_size.dart';
 
-import '../Controller/onboardingController.dart';
+import '../Controller/onboarding_controller.dart';
 
 class Skipbtn extends StatelessWidget {
   const Skipbtn({super.key});

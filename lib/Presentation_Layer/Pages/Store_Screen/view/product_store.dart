@@ -6,7 +6,7 @@ import 'package:shoppingstore/Widgets/grid_layout.dart';
 import 'package:shoppingstore/Widgets/producttitle_withverificationicon.dart';
 import '../../../../Utils/Color/colors.dart';
 import '../../../../Utils/ImagesLink/imagestring.dart';
-import '../../../../Utils/Sizes/Size.dart';
+import '../../../../Utils/Sizes/app_size.dart';
 import '../../../../Utils/TabBar/tab_bar.dart';
 import '../../../../Widgets/appbar.dart';
 import '../../../../Widgets/circular_image.dart';

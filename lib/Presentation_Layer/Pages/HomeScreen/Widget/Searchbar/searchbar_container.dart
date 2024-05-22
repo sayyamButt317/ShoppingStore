@@ -4,7 +4,7 @@ import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 
 import '../../../../../Utils/Color/colors.dart';
 import '../../../../../Utils/Devicesize/deviceutils.dart';
-import '../../../../../Utils/Sizes/Size.dart';
+import '../../../../../Utils/Sizes/app_size.dart';
 
 class SearchBarContainer extends StatelessWidget {
   const SearchBarContainer({

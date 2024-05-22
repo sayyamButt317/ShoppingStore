@@ -1,6 +1,6 @@
 
 import 'package:flutter/cupertino.dart';
-import '../Utils/Sizes/Size.dart';
+import '../Utils/Sizes/app_size.dart';
 
 class Gridlayout extends StatelessWidget {
   const Gridlayout({

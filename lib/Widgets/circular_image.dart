@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../Utils/Color/colors.dart';
 import '../Utils/Helperfunction/helper.dart';
-import '../Utils/Sizes/Size.dart';
+import '../Utils/Sizes/app_size.dart';
 
 class CircularImage extends StatelessWidget {
   const CircularImage({
