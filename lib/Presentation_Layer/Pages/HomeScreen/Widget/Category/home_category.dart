@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-import '../../../../../Core/ImagesLink/imagestring.dart';
+import '../../../../../Utils/ImagesLink/imagestring.dart';
 import '../verticalimage_text/verticalimage_text.dart';
 
 class HomeCategories extends StatelessWidget {

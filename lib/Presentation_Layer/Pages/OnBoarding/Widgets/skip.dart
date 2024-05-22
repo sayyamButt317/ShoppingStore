@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shoppingstore/Core/Devicesize/deviceutils.dart';
-import 'package:shoppingstore/Core/Sizes/Size.dart';
+import 'package:shoppingstore/Utils/Devicesize/deviceutils.dart';
+import 'package:shoppingstore/Utils/Sizes/Size.dart';
 
 import '../Controller/onboardingController.dart';
 

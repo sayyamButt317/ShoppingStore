@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-import '../../../../../Core/Color/colors.dart';
+import '../../../../../Utils/Color/colors.dart';
 import 'circularcontainer.dart';
 import '../curved edge/CurvedEdgeWidget.dart';
 

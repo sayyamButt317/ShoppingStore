@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shoppingstore/Core/Helperfunction/helper.dart';
-import 'package:shoppingstore/Core/ImagesLink/imagestring.dart';
-import 'package:shoppingstore/Core/Text/statictext.dart';
+import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
+import 'package:shoppingstore/Utils/ImagesLink/imagestring.dart';
+import 'package:shoppingstore/Utils/Text/statictext.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/OnBoarding/Controller/onboardingController.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/OnBoarding/Widgets/arrow.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/OnBoarding/Widgets/dotnavigation.dart';

@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../Core/Color/colors.dart';
-import '../Core/Helperfunction/helper.dart';
-import '../Core/Sizes/Size.dart';
+import '../Utils/Color/colors.dart';
+import '../Utils/Helperfunction/helper.dart';
+import '../Utils/Sizes/Size.dart';
 
 class CircularImage extends StatelessWidget {
   const CircularImage({

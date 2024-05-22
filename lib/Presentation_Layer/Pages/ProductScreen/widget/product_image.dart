@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:shoppingstore/Core/Color/colors.dart';
-import 'package:shoppingstore/Core/Icon/circular_icon.dart';
-import 'package:shoppingstore/Core/ImagesLink/imagestring.dart';
+import 'package:shoppingstore/Utils/Color/colors.dart';
+import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
+import 'package:shoppingstore/Utils/Icon/circular_icon.dart';
+import 'package:shoppingstore/Utils/ImagesLink/imagestring.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Banner/banner_image.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Model/product.dart';
 import 'package:shoppingstore/Widgets/appbar.dart';
 
-import '../../../../Core/Sizes/Size.dart';
+import '../../../../Utils/Sizes/Size.dart';
 import '../../HomeScreen/Widget/curved edge/CurvedEdgeWidget.dart';
 
 class ProductImageSlider extends StatelessWidget {
@@ -22,6 +23,8 @@ class ProductImageSlider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+     final dark = HelperFunction.boolIsDarkMode(context);
+    //product Image
     return CurvedEdgeWidget(
       child: Container(
         color: dark ? AppColor.darkerGrey : AppColor.lightColor,
@@ -40,6 +43,7 @@ class ProductImageSlider extends StatelessWidget {
               ),
             ),
             //image slider
+            //product miini image 
              Positioned(
               right: 0,
               bottom: 30,
@@ -65,7 +69,7 @@ class ProductImageSlider extends StatelessWidget {
                 ),
               ),
             ),
-            //Appbar
+            //Appbar back arrow and heart icon
             const CustomAppBar(
               showBackArrow:true,
               actions:[CircularIcon(icon:Iconsax.heart5,color:Colors.red)]

@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:shoppingstore/Core/Enum/enum.dart';
-import 'package:shoppingstore/Core/Text/brandtitle_text.dart';
+import 'package:shoppingstore/Utils/Enum/enum.dart';
+import 'package:shoppingstore/Utils/Text/brandtitle_text.dart';
 
-import '../Core/Color/colors.dart';
-import '../Core/Sizes/Size.dart';
+import '../Utils/Color/colors.dart';
+import '../Utils/Sizes/Size.dart';
 
 class BrandTitleWithVerificationIcon extends StatelessWidget {
   const BrandTitleWithVerificationIcon({

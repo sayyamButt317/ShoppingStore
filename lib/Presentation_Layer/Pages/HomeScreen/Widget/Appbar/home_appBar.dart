@@ -1,7 +1,7 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
-import '../../../../../Core/Color/colors.dart';
-import '../../../../../Core/Text/statictext.dart';
+import '../../../../../Utils/Color/colors.dart';
+import '../../../../../Utils/Text/statictext.dart';
 import '../../../../../Widgets/appbar.dart';
 import '../../../../../shop/carticon/cart_icon.dart';
 

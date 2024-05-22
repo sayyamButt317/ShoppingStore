@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shoppingstore/Core/Enum/enum.dart';
+import 'package:shoppingstore/Utils/Enum/enum.dart';
 
 class BrandTextTitle extends StatelessWidget {
   const BrandTextTitle({

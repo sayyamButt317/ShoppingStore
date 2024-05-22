@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:shoppingstore/Core/Helperfunction/helper.dart';
+import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/View/homescreen.dart';
 
-import '../../Core/Color/colors.dart';
+import '../Utils/Color/colors.dart';
 import '../Presentation_Layer/Pages/Store_Screen/view/product_store.dart';
 
 class BottomNavigation extends StatelessWidget {

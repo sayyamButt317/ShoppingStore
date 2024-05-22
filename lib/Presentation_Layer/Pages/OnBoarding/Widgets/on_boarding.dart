@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shoppingstore/Core/Helperfunction/helper.dart';
-import "../../../../Core/Sizes/Size.dart";
+import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
+import "../../../../Utils/Sizes/Size.dart";
 
 class OnBoarding extends StatelessWidget {
   const OnBoarding(

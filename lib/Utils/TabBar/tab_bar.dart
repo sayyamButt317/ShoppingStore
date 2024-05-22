@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shoppingstore/Core/Helperfunction/helper.dart';
+import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 
 import '../Color/colors.dart';
 import '../Devicesize/deviceutils.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../Core/Color/colors.dart';
+import '../../Utils/Color/colors.dart';
 
 class CartCounterIcon extends StatelessWidget {
   const CartCounterIcon({

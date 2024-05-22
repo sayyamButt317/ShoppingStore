@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shoppingstore/Core/Helperfunction/helper.dart';
-import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/widget/product_attribute.dart';
+import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/widget/product_attributes.dart';
+import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/widget/produxt_metadata.dart';
+import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
+import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/widget/product_image.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/widget/rating_share.dart';
 import '../Model/product.dart';
 
@@ -17,8 +19,12 @@ class ProductDetail extends StatelessWidget {
             //Product Image Slider
             ProductImageSlider(dark: dark, product: product),
 
-            //Product Details
+            //Rating and share
              Ratingandshare(product: product,),
+              //Price & sale price
+              ProductMetaData(product: product,),
+
+              ProductAttributes(),
 
             //
           ],

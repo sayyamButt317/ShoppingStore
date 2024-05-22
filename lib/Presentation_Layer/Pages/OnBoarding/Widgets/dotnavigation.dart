@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import '../../../../Core/Color/colors.dart';
-import '../../../../Core/Sizes/Size.dart';
-import '../../../../Core/Devicesize/deviceutils.dart';
-import '../../../../Core/Helperfunction/helper.dart';
+import '../../../../Utils/Color/colors.dart';
+import '../../../../Utils/Sizes/Size.dart';
+import '../../../../Utils/Devicesize/deviceutils.dart';
+import '../../../../Utils/Helperfunction/helper.dart';
 import '../Controller/onboardingController.dart';
 
 class DotNavigation extends StatelessWidget {

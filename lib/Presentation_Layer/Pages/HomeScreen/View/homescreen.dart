@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shoppingstore/Core/Color/colors.dart';
-import 'package:shoppingstore/Core/Sizes/Size.dart';
+import 'package:shoppingstore/Utils/Color/colors.dart';
+import 'package:shoppingstore/Utils/Sizes/Size.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Searchbar/searchbar_container.dart';
-import '../../../../Core/ImagesLink/imagestring.dart';
+import '../../../../Utils/ImagesLink/imagestring.dart';
 import '../../../../Widgets/grid_layout.dart';
 import '../../../../Widgets/section_heading.dart';
 import '../../../../shop/Card/product_vertical_card.dart';

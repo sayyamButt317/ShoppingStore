@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:shoppingstore/Core/Helperfunction/helper.dart';
-import 'package:shoppingstore/Core/Sizes/Size.dart';
+import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
+import 'package:shoppingstore/Utils/Sizes/Size.dart';
 
 import '../Color/colors.dart';
 

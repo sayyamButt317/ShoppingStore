@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:shoppingstore/Core/Color/colors.dart';
-import 'package:shoppingstore/Core/Helperfunction/helper.dart';
-import 'package:shoppingstore/Core/ImagesLink/imagestring.dart';
-import 'package:shoppingstore/Core/Sizes/Size.dart';
-import 'package:shoppingstore/Core/Text/product_title_text.dart';
+import 'package:shoppingstore/Utils/Color/colors.dart';
+import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
+import 'package:shoppingstore/Utils/ImagesLink/imagestring.dart';
+import 'package:shoppingstore/Utils/Sizes/Size.dart';
+import 'package:shoppingstore/Utils/Text/brandtitle_text.dart';
+import 'package:shoppingstore/Utils/Text/product_title_text.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Container/circularcontainer.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Model/product.dart';
 import 'package:shoppingstore/Widgets/circular_image.dart';
+import 'package:shoppingstore/Widgets/producttitle_withverificationicon.dart';
 import 'package:shoppingstore/shop/price/product_price.dart';
 
 class ProductMetaData extends StatelessWidget {
@@ -36,7 +38,7 @@ class ProductMetaData extends StatelessWidget {
             width: AppSize.spacebtwItems,
           ),
 
-          //proce
+          //price
           Text(
             product.priceSign,
             style: Theme.of(context)
@@ -84,7 +86,8 @@ class ProductMetaData extends StatelessWidget {
             width: 32,
             height: 32,
             overlayColor: dark ? AppColor.white : AppColor.black,
-          )
+          ),
+           const BrandTitleWithVerificationIcon(title: "Maybelline",)
         ],
       )
     ]);

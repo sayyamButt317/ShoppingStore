@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shoppingstore/Core/Helperfunction/helper.dart';
+import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 
-import '../../../../../Core/Color/colors.dart';
-import '../../../../../Core/Sizes/Size.dart';
+import '../../../../../Utils/Color/colors.dart';
+import '../../../../../Utils/Sizes/Size.dart';
 
 class VerticalImageText extends StatelessWidget {
   const VerticalImageText({

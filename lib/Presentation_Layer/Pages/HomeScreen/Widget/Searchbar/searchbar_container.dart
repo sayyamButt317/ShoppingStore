@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:shoppingstore/Core/Helperfunction/helper.dart';
+import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 
-import '../../../../../Core/Color/colors.dart';
-import '../../../../../Core/Devicesize/deviceutils.dart';
-import '../../../../../Core/Sizes/Size.dart';
+import '../../../../../Utils/Color/colors.dart';
+import '../../../../../Utils/Devicesize/deviceutils.dart';
+import '../../../../../Utils/Sizes/Size.dart';
 
 class SearchBarContainer extends StatelessWidget {
   const SearchBarContainer({
