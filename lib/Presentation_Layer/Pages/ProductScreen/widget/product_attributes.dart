@@ -22,40 +22,51 @@ class ProductAttributes extends StatelessWidget {
           padding: const EdgeInsets.all(AppSize.md),
           backgroundColor: dark ? AppColor.darkerGrey : AppColor.darkGrey,
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //title,price and stock status
               Row(
                 children: [
                   const SectionHeading(
                       title: 'Variation', showActionButton: false),
-                  const SizedBox(width: AppSize.spacebtwItems),
+                  
                   Column(
                     children: [
-                      
                       Row(
-                    children: [
-                      const ProductTileText(title: 'Price:', smallSize: true),
-                       const SizedBox(width: AppSize.spacebtwItems),
-                      //Actual Price
-                      Text(
-                        '\$30',
-                        style: Theme.of(context)
-                            .textTheme
-                            .titleSmall!
-                            .apply(decoration: TextDecoration.lineThrough),
+                        children: [
+                          const ProductTileText(
+                              title: 'Price:', smallSize: true),
+                          const SizedBox(width: AppSize.spacebtwItems),
+                          //Actual Price
+                          Text(
+                            '\$30',
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleSmall!
+                                .apply(decoration: TextDecoration.lineThrough),
+                          ),
+                          const SizedBox(
+                            width: AppSize.spacebtwItems,
+                          ),
+                          //sale price
+                          ProductPriceText(
+                            price: product.price,
+                          ),
+                        ],
                       ),
-                      const SizedBox(
-                        width: AppSize.spacebtwItems,
-                      ),
-                      //sale price
-                      ProductPriceText(
-                        price: product.price,
+
+                      //Stock
+                      Row(
+                        children: [
+                          const ProductTileText(
+                              title: 'Stock:', smallSize: true),
+                          Text("In Stock",
+                              style: Theme.of(context).textTheme.titleMedium),
+                        
+                        ],
                       ),
                     ],
                   ),
-                    ],
-                  ),
-                  
                 ],
               ),
             ],

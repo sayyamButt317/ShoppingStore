@@ -3,7 +3,6 @@ import 'package:iconsax/iconsax.dart';
 import 'package:shoppingstore/Utils/Color/colors.dart';
 import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 import 'package:shoppingstore/Utils/Icon/circular_icon.dart';
-import 'package:shoppingstore/Utils/ImagesLink/imagestring.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Banner/banner_image.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Model/product.dart';
 import 'package:shoppingstore/Widgets/appbar.dart';
@@ -59,12 +58,15 @@ class ProductImageSlider extends StatelessWidget {
                     width: AppSize.spacebtwItems,
                   ),
                   itemBuilder: (_, index) => RoundedImage(
-                    imageUrl: ImageLink.product8,
+                   
+                    imageUrl:product.imageLink,
+                    // imageUrl: ImageLink.product8,
                     width: 80,
                     backgroundColor:
                         dark ? AppColor.darkColor : AppColor.white,
                     border: Border.all(color: AppColor.primaryColor),
                     padding: const EdgeInsets.all(AppSize.sm),
+                     isNetworkImage: true,
                   ),
                 ),
               ),
