@@ -38,7 +38,7 @@ class ProductAttributes extends StatelessWidget {
                        const SizedBox(width: AppSize.spacebtwItems),
                       //Actual Price
                       Text(
-                        '\$25',
+                        '\$30',
                         style: Theme.of(context)
                             .textTheme
                             .titleSmall!
