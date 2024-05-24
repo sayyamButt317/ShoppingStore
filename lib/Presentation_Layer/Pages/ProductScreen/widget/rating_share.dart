@@ -23,18 +23,20 @@ final Product product;
               Row(
                 children: [
                   const Icon(
-                    Iconsax.star,
+                    Iconsax.star5,
                     color: Colors.amber,
                     size: 24,
                   ),
                   const SizedBox(
                     width: AppSize.spacebtwItems / 2,
                   ),
-                  Text.rich(TextSpan(children: [
+                  Text.rich(
+                    TextSpan(
+                    children: [
                     TextSpan(
                         text: product.rating.toString(),
                         style: Theme.of(context).textTheme.bodyLarge),
-                    const TextSpan(text: '(199)'),
+                    // const TextSpan(text: '(199)'),
                   ]))
                 ],
               ),

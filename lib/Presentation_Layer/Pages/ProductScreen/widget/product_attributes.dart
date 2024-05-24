@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/widget/product_color_chip.dart';
 import 'package:shoppingstore/Utils/Color/colors.dart';
 import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 import 'package:shoppingstore/Utils/Sizes/app_size.dart';
@@ -16,63 +17,120 @@ class ProductAttributes extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = HelperFunction.boolIsDarkMode(context);
     //selected Attributes pricing and description
-    return Column(
-      children: [
-        CircularContainer(
-          padding: const EdgeInsets.all(AppSize.md),
-          backgroundColor: dark ? AppColor.darkerGrey : AppColor.darkGrey,
-          child: Column(
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Column(
+        children: [
+          //selected Attributes Pricing and Description
+          CircularContainer(
+            padding: const EdgeInsets.all(AppSize.md),
+            backgroundColor: dark ? AppColor.darkerGrey : AppColor.grey,
+            child: Column(
+              children: [
+                //title,price and stock status
+                Row(
+                  children: [
+                    const SectionHeading(
+                        title: 'Variation', showActionButton: false),
+                    const SizedBox(
+                      width: AppSize.spacebtwItems,
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            const ProductTileText(
+                                title: 'Price:', smallSize: true),
+
+                            //Actual Price
+                            Text(
+                              '\$30',
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .titleSmall!
+                                  .apply(
+                                      decoration: TextDecoration.lineThrough),
+                            ),
+                            const SizedBox(
+                              width: AppSize.spacebtwItems,
+                            ),
+                            //sale price
+                            ProductPriceText(
+                              price: product.price,
+                            ),
+                          ],
+                        ),
+
+                        //Stock
+                        Row(
+                          children: [
+                            const ProductTileText(
+                                title: 'Stock Status:', smallSize: true),
+                            Text(" In Stock",
+                                style: Theme.of(context).textTheme.titleMedium),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+
+                // variation Description
+                // ProductTileText(
+                //   title: product.description,
+                //   smallSize: true,
+                //   maxLines: 2,
+                // ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: AppSize.spacebtwItems,
+          ),
+          //Attributes
+          Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              //title,price and stock status
-              Row(
-                children: [
-                  const SectionHeading(
-                      title: 'Variation', showActionButton: false),
-                  
-                  Column(
-                    children: [
-                      Row(
-                        children: [
-                          const ProductTileText(
-                              title: 'Price:', smallSize: true),
-                          const SizedBox(width: AppSize.spacebtwItems),
-                          //Actual Price
-                          Text(
-                            '\$30',
-                            style: Theme.of(context)
-                                .textTheme
-                                .titleSmall!
-                                .apply(decoration: TextDecoration.lineThrough),
-                          ),
-                          const SizedBox(
-                            width: AppSize.spacebtwItems,
-                          ),
-                          //sale price
-                          ProductPriceText(
-                            price: product.price,
-                          ),
-                        ],
-                      ),
-
-                      //Stock
-                      Row(
-                        children: [
-                          const ProductTileText(
-                              title: 'Stock:', smallSize: true),
-                          Text("In Stock",
-                              style: Theme.of(context).textTheme.titleMedium),
-                        
-                        ],
-                      ),
-                    ],
-                  ),
-                ],
+              const SectionHeading(title: 'Colors'),
+              const SizedBox(
+                height: AppSize.spacebtwItems / 2,
               ),
+              Wrap(
+                spacing: 8,
+                children: [
+                  ProductColorChip(
+                      text: 'Green', selected: true, onSelected: (value) {}),
+                  ProductColorChip(
+                      text: 'Blue', selected: false, onSelected: (value) {}),
+                  ProductColorChip(
+                      text: 'Yellow', selected: false, onSelected: (value) {}),
+                ],
+              )
             ],
           ),
-        ),
-      ],
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const SectionHeading(title: 'Size'),
+              const SizedBox(
+                height: AppSize.spacebtwItems / 2,
+              ),
+              Wrap(
+                spacing: 8,
+                children: [
+                  ProductColorChip(
+                      text: 'sm', selected: true, onSelected: (value) {}),
+                  ProductColorChip(
+                      text: 'md', selected: false, onSelected: (value) {}),
+                  ProductColorChip(
+                      text: 'lg', selected: false, onSelected: (value) {}),
+                ],
+              )
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

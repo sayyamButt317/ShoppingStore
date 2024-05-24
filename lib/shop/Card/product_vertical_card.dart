@@ -10,7 +10,7 @@ import '../../Utils/Icon/circular_icon.dart';
 import '../../Utils/Shadow/shadow_style.dart';
 import '../../Utils/Sizes/app_size.dart';
 import '../../Presentation_Layer/Pages/ProductScreen/Model/product.dart';
-import '../../Presentation_Layer/Pages/ProductScreen/Views/product_image_slider.dart';
+import '../../Presentation_Layer/Pages/ProductScreen/Views/product_detail_screen.dart';
 import '../price/product_price.dart';
 import '../text/product_text.dart';
 
