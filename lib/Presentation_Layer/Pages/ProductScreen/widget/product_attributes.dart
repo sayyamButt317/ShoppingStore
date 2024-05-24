@@ -92,12 +92,12 @@ class ProductAttributes extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SectionHeading(title: 'Colors'),
+              const SectionHeading(title: 'Colors',showActionButton: false,),
               const SizedBox(
                 height: AppSize.spacebtwItems / 2,
               ),
               Wrap(
-                spacing: 8,
+                spacing: 6,
                 children: [
                   ProductColorChip(
                       text: 'Green', selected: true, onSelected: (value) {}),
@@ -112,7 +112,7 @@ class ProductAttributes extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SectionHeading(title: 'Size'),
+              const SectionHeading(title: 'Size',showActionButton: false,),
               const SizedBox(
                 height: AppSize.spacebtwItems / 2,
               ),
@@ -120,9 +120,11 @@ class ProductAttributes extends StatelessWidget {
                 spacing: 8,
                 children: [
                   ProductColorChip(
-                      text: 'sm', selected: true, onSelected: (value) {}),
+                      text: 'xs', selected: false, onSelected: (value) {}),
                   ProductColorChip(
-                      text: 'md', selected: false, onSelected: (value) {}),
+                      text: 'sm', selected: false, onSelected: (value) {}),
+                  ProductColorChip(
+                      text: 'md', selected: true, onSelected: (value) {}),
                   ProductColorChip(
                       text: 'lg', selected: false, onSelected: (value) {}),
                 ],

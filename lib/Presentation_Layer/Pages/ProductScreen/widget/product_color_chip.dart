@@ -21,15 +21,15 @@ class ProductColorChip extends StatelessWidget {
           ? const SizedBox()
           :  Text(text),
       selected: selected,
-      onSelected: (value) {},
-      labelStyle: const TextStyle(color: true ? AppColor.white : null),
-      avatar: HelperFunction.getColor(text) != null
+      onSelected: onSelected,
+      labelStyle:  TextStyle(color: selected ? AppColor.white : null),
+      avatar: isColor
           ? CircularContainer(
               width: 50,
               height: 50,
               backgroundColor: HelperFunction.getColor(text)!)
           : null,
-      shape: const CircleBorder(),
+      shape: isColor ? const CircleBorder():null,
       labelPadding: isColor ? const EdgeInsets.all(0):null,
       padding: isColor ? const EdgeInsets.all(0):null,
       selectedColor:isColor ? Colors.green:null,

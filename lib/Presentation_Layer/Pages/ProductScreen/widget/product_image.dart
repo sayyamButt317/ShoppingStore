@@ -68,11 +68,13 @@ class ProductImageSlider extends StatelessWidget {
                     padding: const EdgeInsets.all(AppSize.sm),
                      isNetworkImage: true,
                   ),
+                  
                 ),
               ),
             ),
             //Appbar back arrow and heart icon
             const CustomAppBar(
+              backgroundColor:Colors.transparent,
               showBackArrow:true,
               actions:[CircularIcon(icon:Iconsax.heart5,color:Colors.red)]
             ),
