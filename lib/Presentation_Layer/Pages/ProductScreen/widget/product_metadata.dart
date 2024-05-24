@@ -8,6 +8,7 @@ import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Contain
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Model/product.dart';
 import 'package:shoppingstore/Widgets/circular_image.dart';
 import 'package:shoppingstore/Widgets/producttitle_withverificationicon.dart';
+import 'package:shoppingstore/Widgets/section_heading.dart';
 import 'package:shoppingstore/shop/price/product_price.dart';
 import 'package:shoppingstore/shop/text/product_text.dart';
 
@@ -60,22 +61,25 @@ class ProductMetaData extends StatelessWidget {
         ),
 
         const SizedBox(
-          height: AppSize.spacebtwItems / 1.5,
+          height: AppSize.spacebtwItems / 2,
         ),
         //Product name
         ProductTitleText(title: product.name),
         const SizedBox(
-          height: AppSize.spacebtwItems / 1.5,
+          height: AppSize.spacebtwItems / 2,
         ),
-       
-        // Product name
+       const SectionHeading(title: "Description",showActionButton: false,),
+        const SizedBox(
+          height: AppSize.spacebtwItems / 2,
+        ),
+        // Product desc
          ProductTileText(
                   title: product.description,
                   smallSize: true,
                   maxLines: 5,
                 ),
         const SizedBox(
-          height: AppSize.spacebtwItems / 1.5,
+          height: AppSize.spacebtwItems / 2,
         ),
         // stock Status
         // Row(
