@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/widget/bottom_addtocart.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/widget/product_attributes.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/widget/product_metadata.dart';
 import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
@@ -14,6 +15,7 @@ class ProductDetail extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = HelperFunction.boolIsDarkMode(context);
     return Scaffold(
+      bottomNavigationBar: const BottomAddtoCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
