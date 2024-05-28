@@ -4,11 +4,7 @@ import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/View/homescree
 import 'package:shoppingstore/Presentation_Layer/Pages/OnBoarding/View/onboardingscreen.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Views/product_detail_screen.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/Store_Screen/view/product_store.dart';
-import '../view/login_view.dart';
-import '../view/profile.dart';
-import '../view/signup.dart';
-import '../view/splash.dart';
-import '../widget/routes_name.dart';
+import 'package:shoppingstore/Routes/rooute_name.dart';
 
 class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -20,10 +16,10 @@ class Routes {
         return MaterialPageRoute(builder: (_) => const OnBoardingScreen());
       case RouteName.SIGNUP_SCREEN:
         return MaterialPageRoute(builder: (_) => const StoreScreen());
-      case RouteName.PROFILE_SCREEN:
-        return MaterialPageRoute(builder: (_) =>  ProductDetail(product: product));
-        case Route.CART_SCREEN:
-        return MaterialPageRoute(builder: (_) =>  const CartScreen());
+      case RouteName.CART_SCREEN:
+        return MaterialPageRoute(builder: (_) => const CartScreen());
+      //       case RouteName.PRODUCT_SCREEN:
+      // return MaterialPageRoute(builder: (_) =>  ProductDetail(product: product));
 
       default:
         return MaterialPageRoute(builder: (_) {
