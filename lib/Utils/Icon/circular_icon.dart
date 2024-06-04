@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 import 'package:shoppingstore/Utils/Sizes/app_size.dart';
 

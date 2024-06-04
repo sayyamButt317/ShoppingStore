@@ -4,8 +4,8 @@ import 'package:iconsax/iconsax.dart';
 import 'package:shoppingstore/Utils/Color/colors.dart';
 import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 
-import '../Utils/Devicesize/deviceutils.dart';
-import '../Utils/Sizes/app_size.dart';
+import '../../Utils/Devicesize/deviceutils.dart';
+import '../../Utils/Sizes/app_size.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({

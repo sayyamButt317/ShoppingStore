@@ -13,6 +13,18 @@ class ImageLink {
   static const String onBoarding2 = "Assets/OnBoarding/intro3.gif";
   static const String onBoarding3 = "Assets/OnBoarding/intro2.png";
 
+  //OnBoarding Images
+  static const String paypal = "Assets/icons/payment_methods/paypal.png";
+  static const String googlepay = "Assets/icons/payment_methods/google-pay.png";
+  static const String applepay = "Assets/icons/payment_methods/apple-pay.png";
+  static const String mastercard = "Assets/icons/payment_methods/master-card.png";
+  static const String creditcard = "Assets/icons/payment_methods/credit-card.png";
+  static const String paytm = "Assets/icons/payment_methods/paytm.png";
+  static const String visa = "Assets/icons/payment_methods/visa.png";
+  static const String paystack = "Assets/icons/payment_methods/paystack.png";
+  static const String successfulPaymentIcon = "Assets/icons/payment_methods/successful_payment_icon.png";
+
+
   //Animation
 
   static const String productIllustration =

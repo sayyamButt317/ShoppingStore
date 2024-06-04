@@ -8,7 +8,7 @@ import '../../../../Utils/Color/colors.dart';
 import '../../../../Utils/ImagesLink/imagestring.dart';
 import '../../../../Utils/Sizes/app_size.dart';
 import '../../../../Utils/TabBar/tab_bar.dart';
-import '../../../../Widgets/appbar.dart';
+import '../../../../Widgets/custom_appbar/appbar.dart';
 import '../../../../Widgets/circular_image.dart';
 import '../../../../Widgets/section_heading.dart';
 import '../../HomeScreen/Widget/Searchbar/searchbar_container.dart';

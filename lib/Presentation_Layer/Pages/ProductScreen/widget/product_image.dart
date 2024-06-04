@@ -5,7 +5,7 @@ import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 import 'package:shoppingstore/Utils/Icon/circular_icon.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Banner/banner_image.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Model/product.dart';
-import 'package:shoppingstore/Widgets/appbar.dart';
+import 'package:shoppingstore/Widgets/custom_appbar/appbar.dart';
 
 import '../../../../Utils/Sizes/app_size.dart';
 import '../../HomeScreen/Widget/curved edge/curvededge_widget.dart';
