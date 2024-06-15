@@ -14,10 +14,8 @@ class SuccessScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return   Scaffold(
       body: SingleChildScrollView(
-          child: Padding(
-            padding: AppSize.paddingWithAppBarHeight * 2),
           child: Column(
             children: [
               //Image

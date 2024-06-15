@@ -6,9 +6,10 @@ import 'package:shoppingstore/Utils/Sizes/app_size.dart';
 import 'package:shoppingstore/Utils/Text/product_title_text.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Container/circularcontainer.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Model/product.dart';
-import 'package:shoppingstore/Widgets/circular_image.dart';
-import 'package:shoppingstore/Widgets/producttitle_withverificationicon.dart';
-import 'package:shoppingstore/Widgets/section_heading.dart';
+import 'package:shoppingstore/Widgets/circular_icon/circular_image.dart';
+import 'package:shoppingstore/Widgets/section_heading/section_heading.dart';
+import 'package:shoppingstore/Widgets/title_withicon/producttitle_withverificationicon.dart';
+
 import 'package:shoppingstore/shop/price/product_price.dart';
 import 'package:shoppingstore/shop/text/product_text.dart';
 

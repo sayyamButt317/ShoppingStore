@@ -10,7 +10,8 @@ import 'package:shoppingstore/Utils/Color/colors.dart';
 import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 import 'package:shoppingstore/Utils/ImagesLink/imagestring.dart';
 import 'package:shoppingstore/Utils/Sizes/app_size.dart';
-import 'package:shoppingstore/Widgets/bottomnavigation.dart';
+import 'package:shoppingstore/Widgets/bottom_navigationbar/bottomnavigation.dart';
+
 import 'package:shoppingstore/Widgets/custom_appbar/appbar.dart';
 import 'package:shoppingstore/Widgets/success_screen/success_screen.dart';
 
@@ -69,12 +70,12 @@ class CheckoutScreen extends StatelessWidget {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(AppSize.defaultSpacing),
         child: ElevatedButton(
-          onPressed: () => Get.to(() =>  SuccessScreen(
-            image: ImageLink.successfulPaymentIcon,
-            title: "Payment Success",
-            subtitle: 'Your Item Will be Shipped Soon',
-            onPressed: () => Get.offAll( () => const BottomNavigation()),
-          )),
+          onPressed: () => Get.to(() => SuccessScreen(
+                image: ImageLink.successfulPaymentIcon,
+                title: "Payment Success",
+                subtitle: 'Your Item Will be Shipped Soon',
+                onPressed: () => Get.offAll(() => const BottomNavigation()),
+              )),
           child: const Text('Checkout \$${250}'),
         ),
       ),

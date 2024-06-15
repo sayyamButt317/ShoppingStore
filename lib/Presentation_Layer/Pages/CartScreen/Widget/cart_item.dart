@@ -5,7 +5,8 @@ import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 import 'package:shoppingstore/Utils/ImagesLink/imagestring.dart';
 import 'package:shoppingstore/Utils/Sizes/app_size.dart';
 import 'package:shoppingstore/Utils/Text/product_title_text.dart';
-import 'package:shoppingstore/Widgets/producttitle_withverificationicon.dart';
+
+import 'package:shoppingstore/Widgets/title_withicon/producttitle_withverificationicon.dart';
 
 class CartItem extends StatelessWidget {
   const CartItem({
@@ -28,15 +29,14 @@ class CartItem extends StatelessWidget {
         const SizedBox(
           width: AppSize.spacebtwItems,
         ),
-    
+
         //Title,price and sale
         Expanded(
             child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const BrandTitleWithVerificationIcon(
-                title: 'Maybeline'),
+            const BrandTitleWithVerificationIcon(title: 'Maybeline'),
             const Flexible(
                 child: ProductTitleText(
               title: 'Black Sports Shoes',
@@ -55,8 +55,7 @@ class CartItem extends StatelessWidget {
                     text: ' Size ',
                     style: Theme.of(context).textTheme.bodySmall),
                 TextSpan(
-                    text: ' 7 ',
-                    style: Theme.of(context).textTheme.bodyLarge),
+                    text: ' 7 ', style: Theme.of(context).textTheme.bodyLarge),
               ],
             )),
           ],

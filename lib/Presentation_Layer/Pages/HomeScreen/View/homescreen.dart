@@ -3,9 +3,10 @@ import 'package:get/get.dart';
 import 'package:shoppingstore/Utils/Color/colors.dart';
 import 'package:shoppingstore/Utils/Sizes/app_size.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Searchbar/searchbar_container.dart';
+import 'package:shoppingstore/Widgets/grid_layout/grid_layout.dart';
+import 'package:shoppingstore/Widgets/section_heading/section_heading.dart';
 import '../../../../Utils/ImagesLink/imagestring.dart';
-import '../../../../Widgets/grid_layout.dart';
-import '../../../../Widgets/section_heading.dart';
+
 import '../../../../shop/Card/product_vertical_card.dart';
 import '../../ProductScreen/Controller/productcontroller.dart';
 import '../../ProductScreen/Model/product.dart';
@@ -77,11 +78,7 @@ class HomeScreen extends StatelessWidget {
                   FutureBuilder(
                     future: ProductController().fetchProducts(),
                     builder: (context, snapshot) {
-                      // if (snapshot.connectionState == ConnectionState.waiting) {
-                      //   return const Center(child: CircularProgressIndicator());
-                      // } else if (snapshot.hasError) {
-                      //   return Center(child: Text('Error: ${snapshot.error}'));
-                      // } else { 
+                
                         return Gridlayout(
                         itemCount: productcontroller.productList.length,
                         itemBuilder: (_, index) => ProductCardVertical(

@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import '../Utils/Color/colors.dart';
-import '../Utils/Helperfunction/helper.dart';
-import '../Utils/Sizes/app_size.dart';
+import 'package:shoppingstore/Utils/Color/colors.dart';
+import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
+import 'package:shoppingstore/Utils/Sizes/app_size.dart';
 
 class CircularImage extends StatelessWidget {
   const CircularImage({
@@ -31,10 +30,13 @@ class CircularImage extends StatelessWidget {
     return Container(
       width: width,
       height: height,
-      padding:  EdgeInsets.all(padding),
+      padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
         //if image background color is null then switch it into  light and dark mode color design
-        color: backgroundColor ?? (HelperFunction.boolIsDarkMode(context) ? AppColor.black : AppColor.white),
+        color: backgroundColor ??
+            (HelperFunction.boolIsDarkMode(context)
+                ? AppColor.black
+                : AppColor.white),
         borderRadius: BorderRadius.circular(100),
       ),
       child: Center(

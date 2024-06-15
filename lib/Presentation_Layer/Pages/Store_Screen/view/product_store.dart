@@ -2,15 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:shoppingstore/Utils/Enum/enum.dart';
 import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/Widget/Container/circularcontainer.dart';
-import 'package:shoppingstore/Widgets/grid_layout.dart';
-import 'package:shoppingstore/Widgets/producttitle_withverificationicon.dart';
+import 'package:shoppingstore/Widgets/circular_icon/circular_image.dart';
+import 'package:shoppingstore/Widgets/grid_layout/grid_layout.dart';
+import 'package:shoppingstore/Widgets/section_heading/section_heading.dart';
+import 'package:shoppingstore/Widgets/title_withicon/producttitle_withverificationicon.dart';
+
 import '../../../../Utils/Color/colors.dart';
 import '../../../../Utils/ImagesLink/imagestring.dart';
 import '../../../../Utils/Sizes/app_size.dart';
 import '../../../../Utils/TabBar/tab_bar.dart';
 import '../../../../Widgets/custom_appbar/appbar.dart';
-import '../../../../Widgets/circular_image.dart';
-import '../../../../Widgets/section_heading.dart';
+
 import '../../HomeScreen/Widget/Searchbar/searchbar_container.dart';
 import '../../../../shop/carticon/cart_icon.dart';
 

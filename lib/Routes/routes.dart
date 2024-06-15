@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/CartScreen/View/cart_screen.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/View/homescreen.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/OnBoarding/View/onboardingscreen.dart';
-import 'package:shoppingstore/Presentation_Layer/Pages/ProductScreen/Views/product_detail_screen.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/Store_Screen/view/product_store.dart';
 import 'package:shoppingstore/Routes/rooute_name.dart';
 
