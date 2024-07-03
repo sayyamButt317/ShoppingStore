@@ -14,6 +14,7 @@ import '../../Presentation_Layer/Pages/ProductScreen/Model/product.dart';
 import '../../Presentation_Layer/Pages/ProductScreen/Views/product_detail_screen.dart';
 import '../price/product_price.dart';
 import '../text/product_text.dart';
+import '../../../../../shop/carticon/cart_icon.dart';
 
 class ProductCardVertical extends StatelessWidget {
   final Product product;
@@ -72,12 +73,14 @@ class ProductCardVertical extends StatelessWidget {
                     ),
                   ),
                   //Fav Icon button
-                  const Positioned(
+                   Positioned(
                       top: 0,
                       right: 0,
                       child: CircularIcon(
                         icon: Iconsax.heart5,
-                        color: Colors.red,
+                        color: Colors.grey,
+                        backgroundColor: Colors.white,
+                       onPressed: (){},
                       )),
                 ],
               ),
@@ -94,9 +97,9 @@ class ProductCardVertical extends StatelessWidget {
                     smallSize: true,
                   ),
                   const SizedBox(height: AppSize.spacebtwItems / 2),
-                  const BrandTitleWithVerificationIcon(
-                    title: 'Nike',
-                  ),
+                  BrandTitleWithVerificationIcon(
+              title: product.brand.toString(),
+            )
                 ],
               ),
             ),
@@ -117,16 +120,19 @@ class ProductCardVertical extends StatelessWidget {
                       bottomRight: Radius.circular(AppSize.productImageRadius),
                     ),
                   ),
-                  child: const SizedBox(
+                  child:   SizedBox(
                     width: AppSize.iconLg * 1.2,
                     height: AppSize.iconLg * 1.2,
                     child: Center(
-                      child: Icon(
-                        Iconsax.add,
-                        color: AppColor.white,
-                      ),
+                      child: CartCounterIcon(
+                        iconColor:Colors.white ,
+                      onPressed: () {
+                        
+                      },)
                     ),
                   ),
+
+       
                 ),
               ],
             ),

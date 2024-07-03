@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/Store_Screen/view/product_store.dart';
+import 'package:shoppingstore/Presentation_Layer/Pages/Whishlist/view/favscreen.dart';
 import 'package:shoppingstore/Utils/Color/colors.dart';
 import 'package:shoppingstore/Utils/Helperfunction/helper.dart';
 import 'package:shoppingstore/Presentation_Layer/Pages/HomeScreen/View/homescreen.dart';
 
 
 class BottomNavigation extends StatelessWidget {
-  const BottomNavigation({super.key});
+  const BottomNavigation({super.key, });
 
   @override
   Widget build(BuildContext context) {
@@ -41,11 +42,10 @@ class BottomNavigation extends StatelessWidget {
 
 class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
-
   final screens = [
     HomeScreen(),
     const StoreScreen(),
-    Container(color: Colors.red),
+     const FavouriteScreen(),
     Container(
       color: Colors.grey,
     )

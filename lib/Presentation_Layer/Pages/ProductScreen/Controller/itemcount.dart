@@ -1,14 +1,15 @@
-
 import 'package:get/get.dart';
 
-class ItemController extends GetxController{
-RxString item = RxString('');
+class ItemController extends GetxController {
+  RxInt item = 0.obs;
 
-void increment(){
+  void increment() {
+    item.value++;
+  }
 
-}
-
-void decrement(){
-
-}
+  void decrement() {
+    if (item.value > 0) {
+      item.value--;
+    }
+  }
 }

@@ -104,8 +104,8 @@ class ProductMetaData extends StatelessWidget {
               height: 32,
               overlayColor: dark ? AppColor.white : AppColor.black,
             ),
-            const BrandTitleWithVerificationIcon(
-              title: "Maybelline",
+             BrandTitleWithVerificationIcon(
+              title: product.brand.toString(),
             )
           ],
         )

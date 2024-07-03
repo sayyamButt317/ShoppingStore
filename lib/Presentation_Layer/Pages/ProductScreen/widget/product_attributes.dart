@@ -89,27 +89,29 @@ class ProductAttributes extends StatelessWidget {
           const SizedBox(
             height: AppSize.spacebtwItems,
           ),
-          //Attributes
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const SectionHeading(title: 'Colors',showActionButton: false,),
-              const SizedBox(
-                height: AppSize.spacebtwItems / 2,
-              ),
-              Wrap(
-                spacing: 6,
-                children: [
-                  ProductColorChip(
-                      text: 'Green', selected: true, onSelected: (value) {}),
-                  ProductColorChip(
-                      text: 'Blue', selected: false, onSelected: (value) {}),
-                  ProductColorChip(
-                      text: 'Yellow', selected: false, onSelected: (value) {}),
-                ],
-              )
-            ],
-          ),
+          // color Attributes
+          // Column(
+          //   crossAxisAlignment: CrossAxisAlignment.start,
+          //   children: [
+          //     const SectionHeading(title: 'Colors',showActionButton: false,),
+          //     const SizedBox(
+          //       height: AppSize.spacebtwItems / 2,
+          //     ),
+          //     Wrap(
+          //       spacing: 6,
+          //       children: [
+          //         ProductColorChip(
+          //             text: 'Green', selected: true, onSelected: (value) {}),
+          //         ProductColorChip(
+          //             text: 'Blue', selected: false, onSelected: (value) {}),
+          //         ProductColorChip(
+          //             text: 'Yellow', selected: false, onSelected: (value) {}),
+          //       ],
+          //     )
+          //    ],
+          // ),
+
+          //sizeattributes
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -120,8 +122,7 @@ class ProductAttributes extends StatelessWidget {
               Wrap(
                 spacing: 8,
                 children: [
-                  ProductColorChip(
-                      text: 'xs', selected: false, onSelected: (value) {}),
+                
                   ProductColorChip(
                       text: 'sm', selected: false, onSelected: (value) {}),
                   ProductColorChip(
