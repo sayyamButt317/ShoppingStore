@@ -52,6 +52,7 @@ dependencies:
   carousel_slider:
   cached_network_image: ^3.3.1
 
+
   # State Management
   get:
   get_storage:
@@ -85,7 +86,6 @@ flutter:
     - Assets/images/banners/
     - Assets/images/content/
     - Assets/images/products/
-    - Assets/images/reviews/
     - Assets/logo/
     - Assets/icons/brands/
     - Assets/icons/categories/

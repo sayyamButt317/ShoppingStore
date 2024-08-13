@@ -30,12 +30,20 @@ class AppStaticText {
   static const String email = "Email";
   static const String password = "Password";
   static const String newPassword = "New Password";
+  static const String userName = "Username";
   static const String phoneNumber = "Phone Number";
   static const String rememberMe = " Remember Me";
   static const String forgetPassword = "Forget Password";
+  static const String signIn = "Sign In";
+   static const String createAccount = "Create Account";
+    static const String orSignInWith= "or sign in with";
+     static const String orSignUpWith = "or sign up with";
+    static const String isAgreeTo = "I agree to";
+     static const String privacyPolicy = "Privacy Policy";
   static const String termsOfUse = "Terms of use";
   static const String verificationCode = "Verification Code";
   static const String resendEmail = "Resend Email";
+   static const String resendEmailIn = "Resend email in";
 
   //Authentication Heading Text
   static const String loginTitle = "Welcome Back";
