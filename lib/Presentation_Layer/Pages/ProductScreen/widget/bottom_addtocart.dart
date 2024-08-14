@@ -49,9 +49,9 @@ class _BottomAddtoCartState extends State<BottomAddtoCart> {
               ),
               const SizedBox(width: AppSize.spacebtwItems),
               Obx(() => Text(
-                '${itemController.item.value}',
-                style: Theme.of(context).textTheme.titleSmall,
-              )),
+                    '${itemController.item.value}',
+                    style: Theme.of(context).textTheme.titleSmall,
+                  )),
               const SizedBox(width: AppSize.spacebtwItems),
               CircularIcon(
                 onPressed: () {

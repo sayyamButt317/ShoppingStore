@@ -73,14 +73,14 @@ class ProductCardVertical extends StatelessWidget {
                     ),
                   ),
                   //Fav Icon button
-                   Positioned(
+                  Positioned(
                       top: 0,
                       right: 0,
                       child: CircularIcon(
                         icon: Iconsax.heart5,
                         color: Colors.grey,
                         backgroundColor: Colors.white,
-                       onPressed: (){},
+                        onPressed: () {},
                       )),
                 ],
               ),
@@ -98,8 +98,8 @@ class ProductCardVertical extends StatelessWidget {
                   ),
                   const SizedBox(height: AppSize.spacebtwItems / 2),
                   BrandTitleWithVerificationIcon(
-              title: product.brand.toString(),
-            )
+                    title: product.brand.toString(),
+                  )
                 ],
               ),
             ),
@@ -120,19 +120,15 @@ class ProductCardVertical extends StatelessWidget {
                       bottomRight: Radius.circular(AppSize.productImageRadius),
                     ),
                   ),
-                  child:   SizedBox(
+                  child: SizedBox(
                     width: AppSize.iconLg * 1.2,
-                    height: AppSize.iconLg * 1.2,
+                    height: AppSize.iconLg * 1.05,
                     child: Center(
-                      child: CartCounterIcon(
-                        iconColor:Colors.white ,
-                      onPressed: () {
-                        
-                      },)
-                    ),
+                        child: CartCounterIcon(
+                      iconColor: Colors.white,
+                      onPressed: () {},
+                    )),
                   ),
-
-       
                 ),
               ],
             ),

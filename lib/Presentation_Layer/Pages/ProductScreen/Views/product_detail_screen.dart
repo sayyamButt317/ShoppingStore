@@ -11,12 +11,12 @@ import '../Model/product.dart';
 class ProductDetail extends StatelessWidget {
   const ProductDetail({super.key, required this.product});
   final Product product;
-  
+
   @override
   Widget build(BuildContext context) {
     final dark = HelperFunction.boolIsDarkMode(context);
     return Scaffold(
-      bottomNavigationBar:  const BottomAddtoCart(),
+      bottomNavigationBar: BottomAddtoCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -39,17 +39,18 @@ class ProductDetail extends StatelessWidget {
                 //Attributes
                 ProductAttributes(
                   product: product,
-
-                
                 ),
-                 const SizedBox(height: AppSize.spacebtwSections,),
-                  //Checkout Button
-                  SizedBox(
-                    width: double.infinity,
-                    child: ElevatedButton(
-                      child:const Text('Checkout')
-                       ,onPressed: (){},),
+                const SizedBox(
+                  height: AppSize.spacebtwSections,
+                ),
+                //Checkout Button
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    child: const Text('Checkout'),
+                    onPressed: () {},
                   ),
+                ),
               ]),
             ),
 

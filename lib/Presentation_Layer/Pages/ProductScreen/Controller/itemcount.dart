@@ -4,9 +4,9 @@ class ItemController extends GetxController {
   RxInt item = 0.obs;
 
   void increment() {
-      item.value++;
-     
-      }
+    item.value++;
+  }
+
   void decrement() {
     if (item.value > 0) {
       item.value--;
