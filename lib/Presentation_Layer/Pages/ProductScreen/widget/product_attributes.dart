@@ -115,14 +115,16 @@ class ProductAttributes extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SectionHeading(title: 'Size',showActionButton: false,),
+              const SectionHeading(
+                title: 'Size',
+                showActionButton: false,
+              ),
               const SizedBox(
                 height: AppSize.spacebtwItems / 2,
               ),
               Wrap(
                 spacing: 8,
                 children: [
-                
                   ProductColorChip(
                       text: 'sm', selected: false, onSelected: (value) {}),
                   ProductColorChip(

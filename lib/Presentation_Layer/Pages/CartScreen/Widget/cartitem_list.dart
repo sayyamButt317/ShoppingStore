@@ -6,10 +6,10 @@ import 'package:shoppingstore/shop/price/product_price.dart';
 
 class CartItemListView extends StatelessWidget {
   const CartItemListView({
-    super.key, 
-     this.showAddRemoveButton = true,
+    super.key,
+    this.showAddRemoveButton = true,
   });
-final bool showAddRemoveButton;
+  final bool showAddRemoveButton;
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
@@ -19,26 +19,29 @@ final bool showAddRemoveButton;
       shrinkWrap: true,
       itemCount: 7,
       physics: const NeverScrollableScrollPhysics(),
-      itemBuilder: (_, index) =>  Column(
+      itemBuilder: (_, index) => Column(
         children: [
           const CartItem(),
-          if(showAddRemoveButton) const SizedBox(
-            height: AppSize.spacebtwItems,
-          ),
-           if(showAddRemoveButton)
-           //Add remove button with total price 
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(children: [
-                  SizedBox(width:70),
+          if (showAddRemoveButton)
+            const SizedBox(
+              height: AppSize.spacebtwItems,
+            ),
+          if (showAddRemoveButton)
+            //Add remove button with total price
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    SizedBox(width: 70),
                     //Add Remove Button
-              AddOrRemoveBtn(),
-              ],),
-              //Product Total Price
-              ProductPriceText(price: '250')
-            ],
-          ),
+                    AddOrRemoveBtn(),
+                  ],
+                ),
+                //Product Total Price
+                ProductPriceText(price: '250')
+              ],
+            ),
         ],
       ),
     );

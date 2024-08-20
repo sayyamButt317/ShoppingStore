@@ -16,7 +16,7 @@ class ProductDetail extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = HelperFunction.boolIsDarkMode(context);
     return Scaffold(
-      bottomNavigationBar: BottomAddtoCart(),
+      bottomNavigationBar: const BottomAddtoCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
